@@ -1,0 +1,148 @@
+{
+  "favorites": [
+    {
+      "id": "fav-1",
+      "type": "movie",
+      "title": "Midnight in Paris",
+      "year": 2011,
+      "duration": "1h 34m",
+      "rating": 4.8,
+      "mood": "Rainy Day",
+      "streamPlatform": "Criterion",
+      "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuBev1FDz6ZqqwAfbSwUSlrQ8Ci23j6db5mEM6PCVhI9eW4oYK8FxugdCnXRn1wrw8WYJnnTBinsK_XuhnI7oMVgyeZFfJCRsopa3_Ozw8PyrAtHjgxfh3hfH5LJMaJ7Cb4uxjIOdsnPGtcm3HzTOjSMccECiCAiGr4pi-jWGkK_XPIppELtCqCFLhMQam94j-YPUANzf7OOzWtNRiMIBAYBabhjdJ5e0tmnNBNSX7xEgPpXxTaRpB08"
+    },
+    {
+      "id": "fav-2",
+      "type": "movie",
+      "title": "The Secret Life of Walter Mitty",
+      "year": 2013,
+      "duration": "1h 54m",
+      "rating": 4.7,
+      "mood": "Motivation Boost",
+      "streamPlatform": "Netflix",
+      "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuCszVHp2v16TTJELd0S7dM48Yn2CNgsz69BPeD4IMo3l-tRKPUcoLikHOr9SJqkIuiepPrpvqtorTS5PUmEMcdTQVhJ9RpKv7n3U98NKDi-6do2u1_WrkhVTvD4KNwu6jzcUco_gKFvtARScgPHQ_sjYcwyCfS2wUwDS03fv5RPMroXyhensudOj-gHpFCfnPewoExHBtaPDmDBH08Eq0-ChmWsPr-3Zl3PjXneRYbAjHQlWf5swfqX"
+    },
+    {
+      "id": "fav-3",
+      "type": "bundle",
+      "title": "Ghibli Calm + Lo-Fi Beats",
+      "subtitle": "Totoro paired with Rhodes Piano",
+      "mood": "Nostalgic",
+      "movie": "My Neighbor Totoro",
+      "audio": "ChilledCow 24/7",
+      "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuAZEHskiLlrv8Pj6C1fuArEEYzf8tm1R9YLIkeCNQl5rdN94YCoETcfZ9R65glbJwUdGN-w9UA5y5MGWibEaRj-Ubghj3HEzfLUut2x39-d1eRqi_GVAzTuuMVJXe81uLIIbDJAcPDoV9F6fTYg6SjbEig1y3SMJCNrQzJtKO7vC1qQZU6Q21qTQ4iDreXXM7eJiv4MJTOvA8zdTqjN4yS_jP4Er8zOhLdBaVUsqmxHfekm5Ju7D1jX"
+    }
+  ],
+  "history": [
+    {
+      "id": "h-1790051797266",
+      "date": "Just now",
+      "mood": "Rainy Day",
+      "movie": "Midnight in Paris",
+      "audio": "Rain on the Window",
+      "icon": "water_drop",
+      "liked": false,
+      "timestamp": "2026-09-22T04:36:37.266Z"
+    },
+    {
+      "id": "h1",
+      "date": "Yesterday, 8:40 PM",
+      "mood": "Rainy Day",
+      "movie": "Midnight in Paris",
+      "audio": "Rain on the Window",
+      "icon": "water_drop",
+      "liked": true
+    },
+    {
+      "id": "h2",
+      "date": "3 days ago, 10:15 PM",
+      "mood": "Cozy Night In",
+      "movie": "Fantastic Mr. Fox",
+      "audio": "Midnight Teahouse",
+      "icon": "bedtime",
+      "liked": true
+    },
+    {
+      "id": "h3",
+      "date": "Last Saturday, 2:30 PM",
+      "mood": "Nostalgic",
+      "movie": "My Neighbor Totoro",
+      "audio": "Cassette Attic Loops",
+      "icon": "history",
+      "liked": false
+    }
+  ],
+  "profile": {
+    "name": "Priya",
+    "handle": "@p45gy",
+    "email": "priee0194@gamil.com",
+    "github": "https://github.com/p45gy",
+    "bio": "Searching for movies that feel like warm rain and cozy bookstore corners.",
+    "avatar": "https://avatars.githubusercontent.com/p45gy",
+    "stats": [
+      {
+        "mood": "Rainy Day",
+        "percent": 45,
+        "icon": "water_drop",
+        "color": "#6a548a"
+      },
+      {
+        "mood": "Nostalgic",
+        "percent": 28,
+        "icon": "history",
+        "color": "#1e6b43"
+      },
+      {
+        "mood": "Cozy Night In",
+        "percent": 15,
+        "icon": "bedtime",
+        "color": "#844e63"
+      },
+      {
+        "mood": "Motivation",
+        "percent": 12,
+        "icon": "bolt",
+        "color": "#8B4C1A"
+      }
+    ],
+    "history": [
+      {
+        "id": "h-1790051797266",
+        "date": "Just now",
+        "mood": "Rainy Day",
+        "movie": "Midnight in Paris",
+        "audio": "Rain on the Window",
+        "icon": "water_drop",
+        "liked": false,
+        "timestamp": "2026-09-22T04:36:37.266Z"
+      },
+      {
+        "id": "h1",
+        "date": "Yesterday, 8:40 PM",
+        "mood": "Rainy Day",
+        "movie": "Midnight in Paris",
+        "audio": "Rain on the Window",
+        "icon": "water_drop",
+        "liked": true
+      },
+      {
+        "id": "h2",
+        "date": "3 days ago, 10:15 PM",
+        "mood": "Cozy Night In",
+        "movie": "Fantastic Mr. Fox",
+        "audio": "Midnight Teahouse",
+        "icon": "bedtime",
+        "liked": true
+      },
+      {
+        "id": "h3",
+        "date": "Last Saturday, 2:30 PM",
+        "mood": "Nostalgic",
+        "movie": "My Neighbor Totoro",
+        "audio": "Cassette Attic Loops",
+        "icon": "history",
+        "liked": false
+      }
+    ]
+  }
+}

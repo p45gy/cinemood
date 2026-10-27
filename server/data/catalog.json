@@ -1,0 +1,442 @@
+{
+  "moods": [
+    {
+      "id": "rainy-day",
+      "name": "Rainy Day",
+      "badge": "🌧️ Melancholy & Calm",
+      "tagline": "pick a mood, we'll pick the rest.",
+      "summary": "Misty lo-fi cinema, warm amber streetlamps and gentle acoustic blankets.",
+      "icon": "water_drop",
+      "colorClass": "blue",
+      "bgClass": "bg-surface-dim",
+      "shadowClass": "shadow-blue",
+      "themeColor": "#6a548a",
+      "accentColor": "#ccdbf4",
+      "movies": [
+        {
+          "id": "m1",
+          "title": "Midnight in Paris",
+          "year": 2011,
+          "duration": "1h 34m",
+          "rating": 4.8,
+          "genre": "Romance • Fantasy",
+          "streamPlatform": "Criterion",
+          "streamLogo": "theaters",
+          "matchRate": "98%",
+          "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuCoRrW8IFEluXUa85EGPFKzsKRSi0vwXjFNVI6ua3P8AlJcb5q4-f1TnhfLo_SmzS_WpTB9vx-u2MtD0DOB-De47WYZGkqo9gIpFmx1h8WQWZ-SU-Y07z7mds9LQxhfWpXReGbAs8CYQluOAKw0RyUss4Jm-ev6uya1YUHn8erFg_s2KkMLKv6I9VJjDwAbO60VB0DP7mpmUzRXG6a2u6CJ-uWcW9kTebDrmQ7f1aUerOGYN8cQf2me",
+          "synopsis": "A nostalgic screenwriter is whisked away to 1920s Paris at midnight, uncovering timeless romance under soft streetlamps and rainy cobblestones."
+        },
+        {
+          "id": "m2",
+          "title": "The Secret Life of Walter Mitty",
+          "year": 2013,
+          "duration": "1h 54m",
+          "rating": 4.7,
+          "genre": "Adventure • Drama",
+          "streamPlatform": "Netflix",
+          "streamLogo": "movie",
+          "matchRate": "95%",
+          "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuCoNzRe2onoPDzfuWeBalLbKi46gerAUnhGN-UclyBuKXo4tKm3S7ryImO2BfVY83TmaCLhHychiPrVZMIeldP5gwGY2vsNHkW_eGylitXBGcPopaaYMG4W9__TajJJs9ORtR-izu1wi5UJzxl8d-8QPfcdJ4cP2H2-CLQMHTltnBVBSNeygRmcbVZfuxQcYMRmjXdYbNGDYLKc_k7ID8kgS06aGCZWhyr_bIGoakx4S3VsKn0IK8ED",
+          "synopsis": "An unassuming daydreamer escapes his routine into mist-veiled Icelandic fjords, finding quiet grandeur amidst gentle rain."
+        },
+        {
+          "id": "m3",
+          "title": "Lost in Translation",
+          "year": 2003,
+          "duration": "1h 42m",
+          "rating": 4.9,
+          "genre": "Drama • Melancholy",
+          "streamPlatform": "Hulu",
+          "streamLogo": "play_circle",
+          "matchRate": "97%",
+          "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuA6fCUIcrRVkPXwN6g77xmNyqrUlJuq_3hdO1K-eTdJ1FEO_NX0KnJ0K06Bc-aDeA-D6kH_B7w7HoAqCTjIXa9f1hDEBkd23LynwN0Nn1pL5VSsQdbw5AI8pxWhd25173eVoSQQ97ibYKjSk3AJctuVWF1BZkaWxlivYcFl3nfHv0wdwGPEfdX2rr8r_l4K4nOsPNizltladqMCb_S5PiqdK9JFtu27RlrbylqwtF2keiWXi3kXlKUp",
+          "synopsis": "Two solitary souls cross paths in a high-rise Tokyo hotel against a backdrop of rainy neon horizons and delicate ambient silences."
+        }
+      ],
+      "playlist": {
+        "title": "Rain on the Window",
+        "artist": "Komorebi Tape Loop & Yann Tiersen Cadence",
+        "badge": "Curated Mood Playlist",
+        "description": "A gentle collection of acoustic melodies and soft lo-fi beats, perfect for cozying up while the sky weeps softly outside.",
+        "cover": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJDBgksCmEqyQnuSQSWXdefBb-Km8spK8hoodxzsJaLBZbTCcAhPVR8qSfMr7NPF3ifafCZMvjzxX5pckKbkScMID-pN8sIvDy7RLdCxqIn9elzMC5EUv3peEZ-0iIuTQRsNacDudjaIOLTq9bs--4P5oObBfYuJupZxO_3NVpv__bwYO4qv-4jkurhrnin9wvrfKdmrpg6wWySt_7KwkeBNnFcepa3RudP4iMZVWrSKCaJLh3en7F",
+        "ambientSound": "rain",
+        "soundtrackTrack": "Midnight Rain Waltz",
+        "bpm": 64,
+        "neuroReason": "The gentle pitter-patter of rain dampens sympathetic nervous system arousal, while the amber Parisian glow harmonizes with Yann Tiersen's waltz cadences. This creates a grounded, nostalgic dopamine release ideal for mindful unwinding."
+      }
+    },
+    {
+      "id": "heartbroken",
+      "name": "Heartbroken",
+      "badge": "💔 Cathartic & Healing",
+      "tagline": "cry it out, we've got you.",
+      "summary": "Tender emotional journeys and cathartic musical medicine for healing hearts.",
+      "icon": "heart_broken",
+      "colorClass": "pink",
+      "bgClass": "bg-secondary-container",
+      "shadowClass": "shadow-pink",
+      "themeColor": "#844e63",
+      "accentColor": "#feb9d1",
+      "movies": [
+        {
+          "id": "m4",
+          "title": "Eternal Sunshine of the Spotless Mind",
+          "year": 2004,
+          "duration": "1h 48m",
+          "rating": 4.9,
+          "genre": "Sci-Fi • Romance",
+          "streamPlatform": "Netflix",
+          "streamLogo": "movie",
+          "matchRate": "99%",
+          "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuCu4eEzv__TQ9Y3GoYnkBDqnUHBRk-sNdGqVfOnOgJjkX3-mJF_LHv1sDldxstyTph786Dz17O5IQQFRDTQZxw2tZKLMY2v3iZY3KbxDRO4wvETOfc5jAj5CL8KUD1kXsrGV2Nw4HkHlVqSuifSdH2B2h-0tnqP3sFZ5ZyQZ9_2cy1A7byfsYPAenaKyTv2toMLLw_NlQ5sMotxLEa-xWVvyUyJWto1ec9roOGA6EY_hAbE1-gzPDCD",
+          "synopsis": "A surreal and heart-wrenching dive through memory, regret, and the irrepressible glow of true human connection."
+        },
+        {
+          "id": "m5",
+          "title": "Past Lives",
+          "year": 2023,
+          "duration": "1h 46m",
+          "rating": 4.8,
+          "genre": "Romance • Drama",
+          "streamPlatform": "Criterion",
+          "streamLogo": "theaters",
+          "matchRate": "97%",
+          "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuBev1FDz6ZqqwAfbSwUSlrQ8Ci23j6db5mEM6PCVhI9eW4oYK8FxugdCnXRn1wrw8WYJnnTBinsK_XuhnI7oMVgyeZFfJCRsopa3_Ozw8PyrAtHjgxfh3hfH5LJMaJ7Cb4uxjIOdsnPGtcm3HzTOjSMccECiCAiGr4pi-jWGkK_XPIppELtCqCFLhMQam94j-YPUANzf7OOzWtNRiMIBAYBabhjdJ5e0tmnNBNSX7xEgPpXxTaRpB08",
+          "synopsis": "Childhood sweethearts ponder destiny and parallel timelines over two poignant decades of fleeting encounters."
+        },
+        {
+          "id": "m6",
+          "title": "Her",
+          "year": 2013,
+          "duration": "2h 06m",
+          "rating": 4.7,
+          "genre": "Romance • Sci-Fi",
+          "streamPlatform": "Prime",
+          "streamLogo": "play_circle",
+          "matchRate": "94%",
+          "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuB3JQV0rL1FHtfRFJjmQ2vQKbawKiipRM-ayLu_b1bDEX96TLtFdmiBQe4BojXZzxFoEqty6CqyPSo0huimRMpUXwn_07MWtpZM2g6xkHkVDcnR0s45vVrOTKULnGR6ZdntEiFwn_oVyfLerLLsJ7nNnXZ4v6vjRCLVaT2zDatrJJa6_SU16RI4xKkyt2O-EROwoKXjQ17plybTFkoqK3yzkO95oKHc_Svfxmr1zqcDCRTRVgggN71-",
+          "synopsis": "In a soft-pastel near future, a lonely writer forms an unlikely bond with an AI operating system tailored to his deepest emotional contours."
+        }
+      ],
+      "playlist": {
+        "title": "Cathartic Tears & Soft Hues",
+        "artist": "Phoebe Bridgers & Sufjan Stevens Mood Chamber",
+        "badge": "Emotional Release Session",
+        "description": "Slow piano acoustics and fragile harmonies to soothe an aching spirit and let the heavy weight drift away.",
+        "cover": "https://lh3.googleusercontent.com/aida-public/AB6AXuBacI4djewXGRX78lI99fXhG0kWOfpfI-4_HTRLPu1PCLHzZUGFKy2EUzRtERAO-w7j4AqvbgJMSGYnf4hNuKzOS8IGTS8XVIk44zsY-fFBYNmr7UuLTBc1nNI28rQ5euO0hMyOXuWDnnBv8FOS5LNxspBc1BR5j7axHhuC4C5HghpUYYJOAnaA77VtZPRzkXV8lU-1FhagiWKt5TDDx7O4keE3MJ4f_nAQsgZVgMcCgEX5PzQxJbT_",
+        "ambientSound": "tape_hiss",
+        "soundtrackTrack": "Echoes in the Pale Hallway",
+        "bpm": 52,
+        "neuroReason": "Slow melancholic music triggers prolactin release—a calming hormone associated with crying that promotes post-emotional relief and psychological reset."
+      }
+    },
+    {
+      "id": "hype-mode",
+      "name": "Hype Mode",
+      "badge": "🔥 Energy & Adrenaline",
+      "tagline": "turn the volume up to eleven.",
+      "summary": "Kinetic visual storytelling, pulse-quickening synth beats, and electric energy.",
+      "icon": "local_fire_department",
+      "colorClass": "yellow",
+      "bgClass": "bg-[#FFF5D1]",
+      "shadowClass": "shadow-yellow",
+      "themeColor": "#8B7300",
+      "accentColor": "#FFF5D1",
+      "movies": [
+        {
+          "id": "m7",
+          "title": "Spider-Man: Into the Spider-Verse",
+          "year": 2018,
+          "duration": "1h 57m",
+          "rating": 4.9,
+          "genre": "Animation • Action",
+          "streamPlatform": "Netflix",
+          "streamLogo": "movie",
+          "matchRate": "99%",
+          "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuAZEHskiLlrv8Pj6C1fuArEEYzf8tm1R9YLIkeCNQl5rdN94YCoETcfZ9R65glbJwUdGN-w9UA5y5MGWibEaRj-Ubghj3HEzfLUut2x39-d1eRqi_GVAzTuuMVJXe81uLIIbDJAcPDoV9F6fTYg6SjbEig1y3SMJCNrQzJtKO7vC1qQZU6Q21qTQ4iDreXXM7eJiv4MJTOvA8zdTqjN4yS_jP4Er8zOhLdBaVUsqmxHfekm5Ju7D1jX",
+          "synopsis": "Groundbreaking comic-book visuals synced to pulse-pounding urban beats and leap-of-faith inspiration."
+        },
+        {
+          "id": "m8",
+          "title": "Baby Driver",
+          "year": 2017,
+          "duration": "1h 53m",
+          "rating": 4.8,
+          "genre": "Action • Music",
+          "streamPlatform": "Prime",
+          "streamLogo": "play_circle",
+          "matchRate": "96%",
+          "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuCszVHp2v16TTJELd0S7dM48Yn2CNgsz69BPeD4IMo3l-tRKPUcoLikHOr9SJqkIuiepPrpvqtorTS5PUmEMcdTQVhJ9RpKv7n3U98NKDi-6do2u1_WrkhVTvD4KNwu6jzcUco_gKFvtARScgPHQ_sjYcwyCfS2wUwDS03fv5RPMroXyhensudOj-gHpFCfnPewoExHBtaPDmDBH08Eq0-ChmWsPr-3Zl3PjXneRYbAjHQlWf5swfqX",
+          "synopsis": "A music-fueled getaway driver choreographs escapes to an unforgettable high-octane personal soundtrack."
+        }
+      ],
+      "playlist": {
+        "title": "Neon Velocity & Pulse",
+        "artist": "French 79, Kavinsky & Daft Punk Reverie",
+        "badge": "High Voltage Mix",
+        "description": "High-octane synths, rhythmic drive, and crisp bass lines guaranteed to supercharge your momentum.",
+        "cover": "https://lh3.googleusercontent.com/aida-public/AB6AXuC1pVCOLCjDbzY4Z0yfT3Kw3OBvPSRAo1lRl4pCjQ8YULED8WR-khSeDGW32s0FtdvaZkhAwJBcntT3EKAn-YQ3EWdp6k_3rRaudX4TJh47Uf9VWb7Bmb2lexl8WyGngMtCgwyziSkazQr9BlRjA1Xp7t5zpZXZQJwOqFwtW42mt16-FOYigmIblpuWRQRE8UZukCiMwM1rYHawkPO8FZ-Vt5H1nHu8sDCC7GDN9o6ROmdlMlmHgcEc",
+        "ambientSound": "synth_pulse",
+        "soundtrackTrack": "Hyperdrive Ignition",
+        "bpm": 128,
+        "neuroReason": "High tempo syncopated rhythms drive sympathetic nervous activation and elevate epinephrine, creating razor-sharp focus and unstoppable drive."
+      }
+    },
+    {
+      "id": "nostalgic",
+      "name": "Nostalgic",
+      "badge": "📼 Golden Memories",
+      "tagline": "remember when afternoons lasted forever.",
+      "summary": "Grainy 35mm memories, retro soundtracks, and cozy childhood comfort.",
+      "icon": "history",
+      "colorClass": "mint",
+      "bgClass": "bg-tertiary-container",
+      "shadowClass": "shadow-mint",
+      "themeColor": "#1e6b43",
+      "accentColor": "#8cd7a6",
+      "movies": [
+        {
+          "id": "m9",
+          "title": "My Neighbor Totoro",
+          "year": 1988,
+          "duration": "1h 26m",
+          "rating": 4.9,
+          "genre": "Animation • Fantasy",
+          "streamPlatform": "Netflix",
+          "streamLogo": "movie",
+          "matchRate": "99%",
+          "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuAZEHskiLlrv8Pj6C1fuArEEYzf8tm1R9YLIkeCNQl5rdN94YCoETcfZ9R65glbJwUdGN-w9UA5y5MGWibEaRj-Ubghj3HEzfLUut2x39-d1eRqi_GVAzTuuMVJXe81uLIIbDJAcPDoV9F6fTYg6SjbEig1y3SMJCNrQzJtKO7vC1qQZU6Q21qTQ4iDreXXM7eJiv4MJTOvA8zdTqjN4yS_jP4Er8zOhLdBaVUsqmxHfekm5Ju7D1jX",
+          "synopsis": "Two sisters discover a magical forest spirit during a gentle, nostalgic summer in rural Japan."
+        },
+        {
+          "id": "m10",
+          "title": "Amélie",
+          "year": 2001,
+          "duration": "2h 02m",
+          "rating": 4.8,
+          "genre": "Comedy • Romance",
+          "streamPlatform": "Criterion",
+          "streamLogo": "theaters",
+          "matchRate": "96%",
+          "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuAeOo_Kld4UfYg7fzOdAh3zWCN54gpZh0jAhNsCt7Jg9HXVQUpRvU7r8phxzF0Wkx0IItiMbhF5x-sWy-seZDbSBfdqxbEOArdHHrRHw-ygys5uTiAqPEPeWzeRCJCAHXph6YPa7F-v-2StdrsCRiuYw_OtKOmiBkKdCGrClWa6_WfOaK9q8u7fR1pvmefc0-VLyrvjeRtLBt9ZaMgBOoKFJPEgjxDdmKm9nS3qtAEAY2IeAaD0v16S",
+          "synopsis": "An imaginative Paris waitress discreetly orchestrates small miracles to transform the lives of those around her."
+        }
+      ],
+      "playlist": {
+        "title": "Sun-Bleached Tape Rewind",
+        "artist": "Boards of Canada & Bibio Warm Lo-Fi",
+        "badge": "Memory Lane Capsule",
+        "description": "Gentle vinyl dust crackle, warbling acoustic chords, and summer nostalgia captured on cassette.",
+        "cover": "https://lh3.googleusercontent.com/aida-public/AB6AXuBLbRzBCAAjk_SzjWmVHv1m6IaV97wFpeyZpaP7DiwI3sSXHfJJFhIffh8JuOkRunyb7u7-IkD0urprQ_W65BJNy_E35463RgCN2aaX1kSn9QKsmYIkh1ecaAtkzCyWNgDIf529LlFQHkH06-Ap7-cUux11omVFVMWysy_BztyC-6556lo9xFRx-ukhHOGLTAFNgp99_NQveGP6OnMD_gJjpPcGG88cxpjqFgw-ryRHLGbh7AfrvmeX",
+        "ambientSound": "vinyl_crackle",
+        "soundtrackTrack": "1994 Attic Sunshine",
+        "bpm": 70,
+        "neuroReason": "Warm analog imperfections (crackle, subtle tape wow & flutter) stimulate sensory warmth and reminiscing circuits, fostering safety and contentment."
+      }
+    },
+    {
+      "id": "cozy-night-in",
+      "name": "Cozy Night In",
+      "badge": "🍵 Teacup & Blanket",
+      "tagline": "wrap yourself in pure serenity.",
+      "summary": "Soft lighting, gentle narrative pacing, and acoustic bedtime lullabies.",
+      "icon": "bedtime",
+      "colorClass": "lavender",
+      "bgClass": "bg-primary-container",
+      "shadowClass": "shadow-lavender",
+      "themeColor": "#6a548a",
+      "accentColor": "#d6bcfa",
+      "movies": [
+        {
+          "id": "m11",
+          "title": "Fantastic Mr. Fox",
+          "year": 2009,
+          "duration": "1h 27m",
+          "rating": 4.8,
+          "genre": "Animation • Comedy",
+          "streamPlatform": "Criterion",
+          "streamLogo": "theaters",
+          "matchRate": "97%",
+          "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuB3JQV0rL1FHtfRFJjmQ2vQKbawKiipRM-ayLu_b1bDEX96TLtFdmiBQe4BojXZzxFoEqty6CqyPSo0huimRMpUXwn_07MWtpZM2g6xkHkVDcnR0s45vVrOTKULnGR6ZdntEiFwn_oVyfLerLLsJ7nNnXZ4v6vjRCLVaT2zDatrJJa6_SU16RI4xKkyt2O-EROwoKXjQ17plybTFkoqK3yzkO95oKHc_Svfxmr1zqcDCRTRVgggN71-",
+          "synopsis": "Stop-motion warmth, autumnal corduroys, and whimsical underground adventures with family."
+        },
+        {
+          "id": "m12",
+          "title": "Little Women",
+          "year": 2019,
+          "duration": "2h 15m",
+          "rating": 4.7,
+          "genre": "Drama • Romance",
+          "streamPlatform": "Hulu",
+          "streamLogo": "play_circle",
+          "matchRate": "95%",
+          "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuCu4eEzv__TQ9Y3GoYnkBDqnUHBRk-sNdGqVfOnOgJjkX3-mJF_LHv1sDldxstyTph786Dz17O5IQQFRDTQZxw2tZKLMY2v3iZY3KbxDRO4wvETOfc5jAj5CL8KUD1kXsrGV2Nw4HkHlVqSuifSdH2B2h-0tnqP3sFZ5ZyQZ9_2cy1A7byfsYPAenaKyTv2toMLLw_NlQ5sMotxLEa-xWVvyUyJWto1ec9roOGA6EY_hAbE1-gzPDCD",
+          "synopsis": "Fireplace chats, cozy winter scarves, and lifelong sibling bonds crafted with delicate love."
+        }
+      ],
+      "playlist": {
+        "title": "Golden Hour Dreamscape",
+        "artist": "Komorebi Dream Band (Acoustic Teahouse)",
+        "badge": "Bedtime Comfort",
+        "description": "Warm acoustic picking, soft rhodes tones, and calming organic textures.",
+        "cover": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJDBgksCmEqyQnuSQSWXdefBb-Km8spK8hoodxzsJaLBZbTCcAhPVR8qSfMr7NPF3ifafCZMvjzxX5pckKbkScMID-pN8sIvDy7RLdCxqIn9elzMC5EUv3peEZ-0iIuTQRsNacDudjaIOLTq9bs--4P5oObBfYuJupZxO_3NVpv__bwYO4qv-4jkurhrnin9wvrfKdmrpg6wWySt_7KwkeBNnFcepa3RudP4iMZVWrSKCaJLh3en7F",
+        "ambientSound": "warm_drone",
+        "soundtrackTrack": "Midnight Teahouse (Slowed)",
+        "bpm": 58,
+        "neuroReason": "Muted frequencies and warm acoustic resonance stimulate vagal tone, lowering heart rate and signaling the brain that it's safe to rest."
+      }
+    },
+    {
+      "id": "motivation-boost",
+      "name": "Motivation Boost",
+      "badge": "⚡ Triumphant & Bright",
+      "tagline": "ignite that spark inside.",
+      "summary": "Inspiring underdog triumphs, uplifting orchestrations, and limitless possibilities.",
+      "icon": "bolt",
+      "colorClass": "peach",
+      "bgClass": "bg-[#FFE5D1]",
+      "shadowClass": "shadow-peach",
+      "themeColor": "#8B4C1A",
+      "accentColor": "#FFE5D1",
+      "movies": [
+        {
+          "id": "m13",
+          "title": "Soul",
+          "year": 2020,
+          "duration": "1h 40m",
+          "rating": 4.9,
+          "genre": "Animation • Jazz • Inspiration",
+          "streamPlatform": "Disney+",
+          "streamLogo": "play_circle",
+          "matchRate": "98%",
+          "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuCszVHp2v16TTJELd0S7dM48Yn2CNgsz69BPeD4IMo3l-tRKPUcoLikHOr9SJqkIuiepPrpvqtorTS5PUmEMcdTQVhJ9RpKv7n3U98NKDi-6do2u1_WrkhVTvD4KNwu6jzcUco_gKFvtARScgPHQ_sjYcwyCfS2wUwDS03fv5RPMroXyhensudOj-gHpFCfnPewoExHBtaPDmDBH08Eq0-ChmWsPr-3Zl3PjXneRYbAjHQlWf5swfqX",
+          "synopsis": "A jazz teacher embarks on a transcendent metaphysical voyage to rediscover what truly makes life worth living."
+        }
+      ],
+      "playlist": {
+        "title": "Sunlit Steps & Open Sky",
+        "artist": "Jon Batiste, Ólafur Arnalds & Ludovico Einaudi",
+        "badge": "Inspirational Spark",
+        "description": "Rising piano arpeggios and joyful brass harmonies that kindle determination and wonder.",
+        "cover": "https://lh3.googleusercontent.com/aida-public/AB6AXuBacI4djewXGRX78lI99fXhG0kWOfpfI-4_HTRLPu1PCLHzZUGFKy2EUzRtERAO-w7j4AqvbgJMSGYnf4hNuKzOS8IGTS8XVIk44zsY-fFBYNmr7UuLTBc1nNI28rQ5euO0hMyOXuWDnnBv8FOS5LNxspBc1BR5j7axHhuC4C5HghpUYYJOAnaA77VtZPRzkXV8lU-1FhagiWKt5TDDx7O4keE3MJ4f_nAQsgZVgMcCgEX5PzQxJbT_",
+        "ambientSound": "bright_piano",
+        "soundtrackTrack": "Morning Horizon Jump",
+        "bpm": 92,
+        "neuroReason": "Rising harmonic cadences trigger dopamine bursts in the nucleus accumbens, instilling optimism and goal-oriented forward momentum."
+      }
+    }
+  ],
+  "trendingCombos": [
+    {
+      "id": "tc1",
+      "title": "Studio Ghibli Calm + Lo-Fi Beats",
+      "description": "Totoro-esque visual stillness synced to mellow Rhodes tape loops.",
+      "cinemaTag": "Cinema • 98% Match",
+      "audioTag": "Audio • Cozy",
+      "movieName": "My Neighbor Totoro",
+      "audioName": "ChilledCow 24/7",
+      "cover": "https://lh3.googleusercontent.com/aida-public/AB6AXuAZEHskiLlrv8Pj6C1fuArEEYzf8tm1R9YLIkeCNQl5rdN94YCoETcfZ9R65glbJwUdGN-w9UA5y5MGWibEaRj-Ubghj3HEzfLUut2x39-d1eRqi_GVAzTuuMVJXe81uLIIbDJAcPDoV9F6fTYg6SjbEig1y3SMJCNrQzJtKO7vC1qQZU6Q21qTQ4iDreXXM7eJiv4MJTOvA8zdTqjN4yS_jP4Er8zOhLdBaVUsqmxHfekm5Ju7D1jX",
+      "moodId": "nostalgic",
+      "likes": 2490
+    },
+    {
+      "id": "tc2",
+      "title": "90s Rom-Com + Indie Pop",
+      "description": "Meg Ryan banter paired with upbeat jangle-pop guitar riffs.",
+      "cinemaTag": "Cinema • Heartwarm",
+      "audioTag": "Audio • Upbeat",
+      "movieName": "When Harry Met Sally",
+      "audioName": "Alvvays Radio",
+      "cover": "https://lh3.googleusercontent.com/aida-public/AB6AXuCu4eEzv__TQ9Y3GoYnkBDqnUHBRk-sNdGqVfOnOgJjkX3-mJF_LHv1sDldxstyTph786Dz17O5IQQFRDTQZxw2tZKLMY2v3iZY3KbxDRO4wvETOfc5jAj5CL8KUD1kXsrGV2Nw4HkHlVqSuifSdH2B2h-0tnqP3sFZ5ZyQZ9_2cy1A7byfsYPAenaKyTv2toMLLw_NlQ5sMotxLEa-xWVvyUyJWto1ec9roOGA6EY_hAbE1-gzPDCD",
+      "moodId": "cozy-night-in",
+      "likes": 1820
+    },
+    {
+      "id": "tc3",
+      "title": "Cyberpunk Noir + Dark Synthwave",
+      "description": "Rain-soaked neon megacity vistas synced with driving analog bass.",
+      "cinemaTag": "Cinema • 96% Match",
+      "audioTag": "Audio • Electric",
+      "movieName": "Blade Runner 2049",
+      "audioName": "Gunship Synth Drift",
+      "cover": "https://lh3.googleusercontent.com/aida-public/AB6AXuB3JQV0rL1FHtfRFJjmQ2vQKbawKiipRM-ayLu_b1bDEX96TLtFdmiBQe4BojXZzxFoEqty6CqyPSo0huimRMpUXwn_07MWtpZM2g6xkHkVDcnR0s45vVrOTKULnGR6ZdntEiFwn_oVyfLerLLsJ7nNnXZ4v6vjRCLVaT2zDatrJJa6_SU16RI4xKkyt2O-EROwoKXjQ17plybTFkoqK3yzkO95oKHc_Svfxmr1zqcDCRTRVgggN71-",
+      "moodId": "hype-mode",
+      "likes": 3150
+    }
+  ],
+  "userProfile": {
+    "name": "Luna Vibe",
+    "handle": "@luna_curates",
+    "bio": "Searching for movies that feel like warm rain and cozy bookstore corners.",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBacI4djewXGRX78lI99fXhG0kWOfpfI-4_HTRLPu1PCLHzZUGFKy2EUzRtERAO-w7j4AqvbgJMSGYnf4hNuKzOS8IGTS8XVIk44zsY-fFBYNmr7UuLTBc1nNI28rQ5euO0hMyOXuWDnnBv8FOS5LNxspBc1BR5j7axHhuC4C5HghpUYYJOAnaA77VtZPRzkXV8lU-1FhagiWKt5TDDx7O4keE3MJ4f_nAQsgZVgMcCgEX5PzQxJbT_",
+    "stats": [
+      { "mood": "Rainy Day", "percent": 45, "icon": "water_drop", "color": "#6a548a" },
+      { "mood": "Nostalgic", "percent": 28, "icon": "history", "color": "#1e6b43" },
+      { "mood": "Cozy Night In", "percent": 15, "icon": "bedtime", "color": "#844e63" },
+      { "mood": "Motivation", "percent": 12, "icon": "bolt", "color": "#8B4C1A" }
+    ],
+    "history": [
+      {
+        "id": "h1",
+        "date": "Yesterday, 8:40 PM",
+        "mood": "Rainy Day",
+        "movie": "Midnight in Paris",
+        "audio": "Rain on the Window",
+        "icon": "water_drop",
+        "liked": true
+      },
+      {
+        "id": "h2",
+        "date": "3 days ago, 10:15 PM",
+        "mood": "Cozy Night In",
+        "movie": "Fantastic Mr. Fox",
+        "audio": "Midnight Teahouse",
+        "icon": "bedtime",
+        "liked": true
+      },
+      {
+        "id": "h3",
+        "date": "Last Saturday, 2:30 PM",
+        "mood": "Nostalgic",
+        "movie": "My Neighbor Totoro",
+        "audio": "Cassette Attic Loops",
+        "icon": "history",
+        "liked": false
+      }
+    ]
+  },
+  "initialFavorites": [
+    {
+      "id": "fav-1",
+      "type": "movie",
+      "title": "Midnight in Paris",
+      "year": 2011,
+      "duration": "1h 34m",
+      "rating": 4.8,
+      "mood": "Rainy Day",
+      "streamPlatform": "Criterion",
+      "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuBev1FDz6ZqqwAfbSwUSlrQ8Ci23j6db5mEM6PCVhI9eW4oYK8FxugdCnXRn1wrw8WYJnnTBinsK_XuhnI7oMVgyeZFfJCRsopa3_Ozw8PyrAtHjgxfh3hfH5LJMaJ7Cb4uxjIOdsnPGtcm3HzTOjSMccECiCAiGr4pi-jWGkK_XPIppELtCqCFLhMQam94j-YPUANzf7OOzWtNRiMIBAYBabhjdJ5e0tmnNBNSX7xEgPpXxTaRpB08"
+    },
+    {
+      "id": "fav-2",
+      "type": "movie",
+      "title": "The Secret Life of Walter Mitty",
+      "year": 2013,
+      "duration": "1h 54m",
+      "rating": 4.7,
+      "mood": "Motivation Boost",
+      "streamPlatform": "Netflix",
+      "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuCszVHp2v16TTJELd0S7dM48Yn2CNgsz69BPeD4IMo3l-tRKPUcoLikHOr9SJqkIuiepPrpvqtorTS5PUmEMcdTQVhJ9RpKv7n3U98NKDi-6do2u1_WrkhVTvD4KNwu6jzcUco_gKFvtARScgPHQ_sjYcwyCfS2wUwDS03fv5RPMroXyhensudOj-gHpFCfnPewoExHBtaPDmDBH08Eq0-ChmWsPr-3Zl3PjXneRYbAjHQlWf5swfqX"
+    },
+    {
+      "id": "fav-3",
+      "type": "bundle",
+      "title": "Ghibli Calm + Lo-Fi Beats",
+      "subtitle": "Totoro paired with Rhodes Piano",
+      "mood": "Nostalgic",
+      "movie": "My Neighbor Totoro",
+      "audio": "ChilledCow 24/7",
+      "poster": "https://lh3.googleusercontent.com/aida-public/AB6AXuAZEHskiLlrv8Pj6C1fuArEEYzf8tm1R9YLIkeCNQl5rdN94YCoETcfZ9R65glbJwUdGN-w9UA5y5MGWibEaRj-Ubghj3HEzfLUut2x39-d1eRqi_GVAzTuuMVJXe81uLIIbDJAcPDoV9F6fTYg6SjbEig1y3SMJCNrQzJtKO7vC1qQZU6Q21qTQ4iDreXXM7eJiv4MJTOvA8zdTqjN4yS_jP4Er8zOhLdBaVUsqmxHfekm5Ju7D1jX"
+    }
+  ]
+}

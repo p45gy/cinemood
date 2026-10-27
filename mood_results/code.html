@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cinemood - Mood Result</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#002110",
+                        "surface-container-highest": "#d4e4fc",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "tertiary-fixed-dim": "#8bd7a6",
+                        "tertiary-container": "#8cd7a6",
+                        "primary-container": "#d6bcfa",
+                        "on-tertiary-container": "#0c5f38",
+                        "on-surface": "#0d1c2e",
+                        "on-primary-fixed-variant": "#513c71",
+                        "surface-container": "#e5eeff",
+                        "on-secondary-fixed-variant": "#69374b",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#5e497e",
+                        "surface-dim": "#ccdbf4",
+                        "error-container": "#ffdad6",
+                        "outline": "#7b757f",
+                        "primary": "#6a548a",
+                        "secondary-container": "#feb9d1",
+                        "primary-fixed-dim": "#d5bbf9",
+                        "background": "#f8f9ff",
+                        "on-tertiary-fixed-variant": "#00522f",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#eddcff",
+                        "on-primary-fixed": "#250f43",
+                        "inverse-surface": "#223144",
+                        "on-secondary-fixed": "#350c1f",
+                        "surface": "#f8f9ff",
+                        "surface-container-high": "#dce9ff",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#d4e4fc",
+                        "inverse-primary": "#d5bbf9",
+                        "secondary-fixed-dim": "#f8b3cb",
+                        "tertiary-fixed": "#a7f3c0",
+                        "on-surface-variant": "#4a454e",
+                        "secondary": "#844e63",
+                        "on-secondary-container": "#7b465a",
+                        "secondary-fixed": "#ffd9e4",
+                        "surface-tint": "#6a548a",
+                        "inverse-on-surface": "#eaf1ff",
+                        "outline-variant": "#ccc4cf",
+                        "tertiary": "#1e6b43",
+                        "surface-bright": "#f8f9ff",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#0d1c2e",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base-unit": "8px",
+                        "container-padding-desktop": "64px",
+                        "container-padding-mobile": "24px",
+                        "section-gap": "48px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Quicksand"],
+                        "label-sm": ["Quicksand"],
+                        "body-md": ["Quicksand"],
+                        "display-lg-mobile": ["Quicksand"],
+                        "body-lg": ["Quicksand"],
+                        "headline-md": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["13px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #FFFDF5; /* Cream background acting as the floor */
+            color: #0d1c2e; /* on-surface */
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Soft, colored glow for depth */
+        .shadow-glow-lavender {
+            box-shadow: 0 10px 25px -5px rgba(106, 84, 138, 0.15), 0 8px 10px -6px rgba(106, 84, 138, 0.1);
+        }
+        .shadow-ambient {
+            box-shadow: 0 4px 15px rgba(106, 84, 138, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md antialiased pb-28 md:pb-0 pt-20">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md flex justify-center items-center px-container-padding-mobile py-4 flat no shadows md:hidden">
+<div class="absolute left-container-padding-mobile flex items-center">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-low text-primary hover:bg-surface-container transition-colors scale-95 active:scale-90 shadow-ambient">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-primary dark:text-primary-fixed-dim tracking-tight">Rainy Day</h1>
+</header>
+<!-- Desktop Header -->
+<header class="hidden md:flex fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md justify-between items-center px-container-padding-desktop py-4 flat no shadows">
+<div class="flex items-center gap-4">
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-low text-primary hover:bg-surface-container transition-colors scale-95 active:scale-90 shadow-ambient">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-display-lg text-display-lg text-primary dark:text-primary-fixed-dim tracking-tight">Rainy Day</h1>
+</div>
+<nav class="flex gap-8">
+<a class="font-label-sm text-label-sm text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity flex items-center gap-2" href="#">
+<span class="material-symbols-outlined">home</span> Home
+            </a>
+<a class="font-label-sm text-label-sm flex items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-4 py-2" href="#">
+<span class="material-symbols-outlined mr-2">search</span> Explore
+            </a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant hover:opacity-80 transition-opacity flex items-center gap-2" href="#">
+<span class="material-symbols-outlined">favorite</span> Favorites
+            </a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant hover:opacity-80 transition-opacity flex items-center gap-2" href="#">
+<span class="material-symbols-outlined">person</span> Profile
+            </a>
+</nav>
+</header>
+<main class="max-w-[1440px] mx-auto px-container-padding-mobile md:px-container-padding-desktop mt-8 md:mt-24 space-y-section-gap">
+<!-- Watch Section -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-[32px]">movie</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Watch</h2>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-gutter pb-6 -mx-container-padding-mobile px-container-padding-mobile md:mx-0 md:px-0">
+<!-- Movie Card 1 -->
+<div class="min-w-[240px] md:min-w-[280px] flex-shrink-0 bg-surface-container-lowest rounded-xl shadow-ambient overflow-hidden group cursor-pointer transition-transform hover:-translate-y-1">
+<div class="relative h-[360px] md:h-[420px] w-full">
+<img class="w-full h-full object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-500" data-alt="A cinematic movie poster for a cozy, melancholic film set in a rainy city. The image features soft, diffused lighting, primarily using deep blues, muted grays, and warm, glowing yellow streetlights reflecting on wet pavement. A lone figure stands under an umbrella in the distance. The style is illustrative, gentle, and atmospheric, fitting a 'Playful Serenity' aesthetic. High quality, detailed." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoRrW8IFEluXUa85EGPFKzsKRSi0vwXjFNVI6ua3P8AlJcb5q4-f1TnhfLo_SmzS_WpTB9vx-u2MtD0DOB-De47WYZGkqo9gIpFmx1h8WQWZ-SU-Y07z7mds9LQxhfWpXReGbAs8CYQluOAKw0RyUss4Jm-ev6uya1YUHn8erFg_s2KkMLKv6I9VJjDwAbO60VB0DP7mpmUzRXG6a2u6CJ-uWcW9kTebDrmQ7f1aUerOGYN8cQf2me"/>
+<!-- Streaming Logo overlay -->
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-sm">
+<img class="w-6 h-6 object-contain" data-alt="A minimal, stylized, soft-edged red 'N' logo icon, reminiscent of a popular streaming service, designed in a playful, rounded aesthetic suitable for a whimsical app interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGfKHAr0ounIw2bR7dEyK3rJVfqAPB23n1UBGtwrv1ONfHlaZf4dKbdjHZuSeYZR33TuEJK7zvqK5tl7FR2pA99b0HZDDhAPo8_cZe8HNYBUZ-1xiQc7nk2R24OpyQtGHKfnrQluKRdw9oHks28jmNhgovflNLX-JDIWq0zt-PhCWGz2cTobjAx3OV8y7jVXiOdiCTlxbOlmlq-zxaoIcJFJd_99g7nYDzjsyohH9P92Get4_5E1ZJ"/>
+</div>
+</div>
+<div class="p-4 bg-white relative z-10 -mt-2 rounded-t-xl">
+<h3 class="font-body-lg text-body-lg text-on-surface mb-1 truncate">Midnight in Paris</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Romance • 2011</p>
+</div>
+</div>
+<!-- Movie Card 2 -->
+<div class="min-w-[240px] md:min-w-[280px] flex-shrink-0 bg-surface-container-lowest rounded-xl shadow-ambient overflow-hidden group cursor-pointer transition-transform hover:-translate-y-1">
+<div class="relative h-[360px] md:h-[420px] w-full">
+<img class="w-full h-full object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-500" data-alt="A beautiful, soft-focus movie poster depicting a serene, rainy landscape with a small, cozy cabin in the foreground. Warm light spills from the cabin windows into the cool, misty, lavender-tinted evening air. The style is painterly and whimsical, emphasizing comfort and 'Playful Serenity'. Highly detailed, low contrast, pastel tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoNzRe2onoPDzfuWeBalLbKi46gerAUnhGN-UclyBuKXo4tKm3S7ryImO2BfVY83TmaCLhHychiPrVZMIeldP5gwGY2vsNHkW_eGylitXBGcPopaaYMG4W9__TajJJs9ORtR-izu1wi5UJzxl8d-8QPfcdJ4cP2H2-CLQMHTltnBVBSNeygRmcbVZfuxQcYMRmjXdYbNGDYLKc_k7ID8kgS06aGCZWhyr_bIGoakx4S3VsKn0IK8ED"/>
+<!-- Streaming Logo overlay -->
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-blue-500 text-[24px]">play_circle</span>
+</div>
+</div>
+<div class="p-4 bg-white relative z-10 -mt-2 rounded-t-xl">
+<h3 class="font-body-lg text-body-lg text-on-surface mb-1 truncate">The Secret Life of Walter Mitty</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Adventure • 2013</p>
+</div>
+</div>
+<!-- Movie Card 3 -->
+<div class="min-w-[240px] md:min-w-[280px] flex-shrink-0 bg-surface-container-lowest rounded-xl shadow-ambient overflow-hidden group cursor-pointer transition-transform hover:-translate-y-1">
+<div class="relative h-[360px] md:h-[420px] w-full">
+<div class="w-full h-full bg-cover bg-center rounded-t-xl group-hover:scale-105 transition-transform duration-500" data-alt="A stylized, illustrative movie poster showing a peaceful, rainy cafe scene viewed from the inside looking out through a wet window. Soft, warm interior lighting contrasts with the cool, rainy street outside. The color palette is dominated by soft creams, muted lavenders, and gentle teal. Playful, serene aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6fCUIcrRVkPXwN6g77xmNyqrUlJuq_3hdO1K-eTdJ1FEO_NX0KnJ0K06Bc-aDeA-D6kH_B7w7HoAqCTjIXa9f1hDEBkd23LynwN0Nn1pL5VSsQdbw5AI8pxWhd25173eVoSQQ97ibYKjSk3AJctuVWF1BZkaWxlivYcFl3nfHv0wdwGPEfdX2rr8r_l4K4nOsPNizltladqMCb_S5PiqdK9JFtu27RlrbylqwtF2keiWXi3kXlKUp')"></div>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-purple-500 text-[24px]">movie</span>
+</div>
+</div>
+<div class="p-4 bg-white relative z-10 -mt-2 rounded-t-xl">
+<h3 class="font-body-lg text-body-lg text-on-surface mb-1 truncate">Lost in Translation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Drama • 2003</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Listen Section -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-[32px]">headphones</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Listen</h2>
+</div>
+<div class="bg-primary-fixed rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-8 shadow-glow-lavender border border-primary-fixed-dim/30">
+<!-- Cover Art -->
+<div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 rounded-xl overflow-hidden shadow-ambient relative group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A soft, beautiful album cover illustration for a 'Rainy Day' playlist. The image features abstract, flowing shapes resembling raindrops and gentle waves in a palette of pale lavender, soft cream, and muted indigo. The style is extremely minimalist, tactile, and soothing, embodying a 'Playful Serenity' aesthetic. High quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJDBgksCmEqyQnuSQSWXdefBb-Km8spK8hoodxzsJaLBZbTCcAhPVR8qSfMr7NPF3ifafCZMvjzxX5pckKbkScMID-pN8sIvDy7RLdCxqIn9elzMC5EUv3peEZ-0iIuTQRsNacDudjaIOLTq9bs--4P5oObBfYuJupZxO_3NVpv__bwYO4qv-4jkurhrnin9wvrfKdmrpg6wWySt_7KwkeBNnFcepa3RudP4iMZVWrSKCaJLh3en7F"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<!-- Playlist Details -->
+<div class="flex flex-col items-center md:items-start text-center md:text-left flex-grow">
+<span class="font-label-sm text-label-sm text-on-primary-fixed-variant bg-white/50 px-3 py-1 rounded-full mb-4">Curated Mood Playlist</span>
+<h3 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary-fixed mb-2">Rain on the Window</h3>
+<p class="font-body-md text-body-md text-on-primary-fixed-variant mb-8 max-w-md">A gentle collection of acoustic melodies and soft lo-fi beats, perfect for cozying up while the sky weeps softly outside.</p>
+<button class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded-full flex items-center gap-2 shadow-ambient hover:bg-surface-tint transition-colors scale-100 hover:scale-105 active:scale-95 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                        Play Now
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full rounded-t-xl z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-xl shadow-[0_-4px_20px_rgba(106,84,138,0.05)] flex justify-around items-center px-8 pb-8 pt-4 border-t-0">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant w-12 h-12 hover:bg-primary-container/50 dark:hover:bg-primary/50 transition-colors rounded-full scale-110 active:scale-95 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined">home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full w-12 h-12 hover:bg-primary-container/50 dark:hover:bg-primary/50 transition-colors scale-110 active:scale-95 duration-300 ease-out shadow-ambient" href="#">
+<span class="material-symbols-outlined">search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant w-12 h-12 hover:bg-primary-container/50 dark:hover:bg-primary/50 transition-colors rounded-full scale-110 active:scale-95 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined">favorite</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant w-12 h-12 hover:bg-primary-container/50 dark:hover:bg-primary/50 transition-colors rounded-full scale-110 active:scale-95 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined">person</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#8cd7a6", "on-error-container": "#93000a", "secondary-container": "#feb9d1", "primary": "#6a548a", "tertiary": "#1e6b43", "on-primary-fixed": "#250f43", "primary-fixed-dim": "#d5bbf9", "on-tertiary-container": "#0c5f38", "primary-fixed": "#eddcff", "on-primary": "#ffffff", "secondary-fixed": "#ffd9e4", "on-surface-variant": "#4a454e", "on-error": "#ffffff", "surface-container-high": "#dce9ff", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#69374b", "surface-dim": "#ccdbf4", "outline": "#7b757f", "primary-container": "#d6bcfa", "on-background": "#0d1c2e", "surface-container-low": "#eff4ff", "surface-variant": "#d4e4fc", "on-surface": "#0d1c2e", "inverse-primary": "#d5bbf9", "on-secondary-fixed": "#350c1f", "on-tertiary-fixed-variant": "#00522f", "inverse-surface": "#223144", "tertiary-fixed-dim": "#8bd7a6", "surface-tint": "#6a548a", "surface-container-highest": "#d4e4fc", "on-primary-container": "#5e497e", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "inverse-on-surface": "#eaf1ff", "outline-variant": "#ccc4cf", "background": "#f8f9ff", "surface": "#f8f9ff", "on-secondary": "#ffffff", "tertiary-fixed": "a7f3c0", "on-secondary-container": "#7b465a", "on-tertiary-fixed": "#002110", "on-primary-fixed-variant": "#513c71", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "secondary": "#844e63", "surface-container": "#e5eeff", "secondary-fixed-dim": "#f8b3cb" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "base-unit": "8px", "container-padding-mobile": "24px", "gutter": "24px", "section-gap": "48px", "container-padding-desktop": "64px" }, "fontFamily": { "body-lg": ["Quicksand"], "display-lg-mobile": ["Quicksand"], "display-lg": ["Quicksand"], "label-sm": ["Quicksand"], "body-md": ["Quicksand"], "headline-md": ["Quicksand"] }, "fontSize": { "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["13px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-container-padding-mobile flex items-center justify-between"><div class="flex items-center gap-2"><div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[22px]">mood</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary font-bold leading-none tracking-tight">Cur the Mood</span><span class="font-label-sm text-label-sm text-on-surface-variant">Search</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full px-container-padding-mobile pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full space-y-6">
+<!-- Friendly Search Header Component -->
+<section class="flex flex-col space-y-2 pt-2">
+<div class="relative flex items-center w-full">
+<div class="absolute left-4 flex items-center pointer-events-none text-primary">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</div>
+<input class="w-full h-14 pl-12 pr-14 rounded-full bg-surface-container-lowest font-body-md text-body-md text-on-surface placeholder:text-outline shadow-[0_4px_20px_rgba(106,84,138,0.06)] focus:outline-none focus:shadow-[0_4px_24px_rgba(214,188,250,0.45)] transition-all duration-300" id="vibe-search-input" placeholder="Search movies, vibes, or feelings..." type="text"/>
+<button aria-label="Filter options" class="absolute right-2.5 w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed shadow-sm active:scale-95 transition-transform duration-150 hover:bg-primary-container" id="filter-toggle-btn">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<div class="flex items-center justify-between px-2 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary-container inline-block animate-pulse"></span>
+        Syncing real-time emotional resonance
+      </span>
+<button class="font-label-sm text-label-sm text-primary font-bold hover:underline flex items-center gap-0.5" id="surprise-me-btn">
+<span class="material-symbols-outlined text-[16px]">magic_button</span>
+        Surprise vibe
+      </button>
+</div>
+</section>
+<!-- Browse by Vibe Horizontal Scroll -->
+<section class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface">Browse by Vibe</h2>
+<span class="font-label-sm text-label-sm text-primary font-bold">Swipe →</span>
+</div>
+<div class="flex gap-2.5 overflow-x-auto pb-2 -mx-container-padding-mobile px-container-padding-mobile no-scrollbar scroll-smooth">
+<button class="vibe-chip group shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-[0_2px_8px_rgba(106,84,138,0.04)] active:scale-95 transition-all duration-200 hover:bg-primary-container hover:text-on-primary-container">
+<span class="w-6 h-6 rounded-full bg-surface-container-lowest flex items-center justify-center text-[13px] shadow-xs">🌧️</span>
+<span>Melancholy</span>
+</button>
+<button class="vibe-chip group shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shadow-[0_2px_8px_rgba(254,185,209,0.25)] active:scale-95 transition-all duration-200 hover:brightness-105">
+<span class="w-6 h-6 rounded-full bg-surface-container-lowest flex items-center justify-center text-[13px] shadow-xs">⚡</span>
+<span>Energetic</span>
+</button>
+<button class="vibe-chip group shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm shadow-[0_2px_8px_rgba(214,188,250,0.25)] active:scale-95 transition-all duration-200 hover:bg-primary-container">
+<span class="w-6 h-6 rounded-full bg-surface-container-lowest flex items-center justify-center text-[13px] shadow-xs">☁️</span>
+<span>Daydreaming</span>
+</button>
+<button class="vibe-chip group shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm shadow-[0_2px_8px_rgba(140,215,166,0.2)] active:scale-95 transition-all duration-200 hover:brightness-105">
+<span class="w-6 h-6 rounded-full bg-surface-container-lowest flex items-center justify-center text-[13px] shadow-xs">🍵</span>
+<span>Sunday Reset</span>
+</button>
+<button class="vibe-chip group shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-[0_2px_8px_rgba(106,84,138,0.04)] active:scale-95 transition-all duration-200 hover:bg-primary-container">
+<span class="w-6 h-6 rounded-full bg-surface-container-lowest flex items-center justify-center text-[13px] shadow-xs">🌃</span>
+<span>Night Drive</span>
+</button>
+<button class="vibe-chip group shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shadow-[0_2px_8px_rgba(255,217,228,0.3)] active:scale-95 transition-all duration-200 hover:bg-secondary-container">
+<span class="w-6 h-6 rounded-full bg-surface-container-lowest flex items-center justify-center text-[13px] shadow-xs">💧</span>
+<span>Cathartic Cry</span>
+</button>
+</div>
+</section>
+<!-- Interactive Mood Resonance Slider Card -->
+<section class="p-5 rounded-lg bg-surface-container-lowest shadow-[0_4px_20px_rgba(106,84,138,0.05)] flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">graphic_eq</span>
+<span class="font-headline-md text-headline-md text-on-surface text-[18px] leading-tight">Mood Density</span>
+</div>
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed" id="slider-status">64% Cozy Cloud</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px] leading-snug">Slide to adjust your audio-visual tempo balance.</p>
+<div class="pt-2 pb-1">
+<input class="w-full h-3.5 bg-surface-container rounded-full appearance-none cursor-pointer accent-primary focus:outline-none" id="tempo-slider" max="100" min="0" type="range" value="64"/>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline px-1">
+<span>Ambient Float</span>
+<span>Peak Euphoria</span>
+</div>
+</section>
+<!-- Quick Streaming Filters -->
+<section class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface">Quick Connected Streams</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tap to filter</span>
+</div>
+<div class="grid grid-cols-4 gap-2.5">
+<!-- Spotify Toggle -->
+<button class="stream-toggle active flex flex-col items-center justify-center p-3 rounded-xl bg-tertiary-container text-on-tertiary-container shadow-[0_3px_12px_rgba(140,215,166,0.25)] transition-all duration-200" data-platform="spotify">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center mb-1.5 shadow-xs text-tertiary">
+<span class="material-symbols-outlined text-[24px]">album</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold">Spotify</span>
+</button>
+<!-- Netflix Toggle -->
+<button class="stream-toggle active flex flex-col items-center justify-center p-3 rounded-xl bg-secondary-container text-on-secondary-container shadow-[0_3px_12px_rgba(254,185,209,0.25)] transition-all duration-200" data-platform="netflix">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center mb-1.5 shadow-xs text-secondary">
+<span class="material-symbols-outlined text-[24px]">movie</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold">Netflix</span>
+</button>
+<!-- Prime Toggle -->
+<button class="stream-toggle opacity-60 flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-high text-on-surface shadow-[0_2px_8px_rgba(106,84,138,0.03)] transition-all duration-200" data-platform="prime">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center mb-1.5 shadow-xs text-primary">
+<span class="material-symbols-outlined text-[24px]">play_circle</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold">Prime</span>
+</button>
+<!-- Apple Music Toggle -->
+<button class="stream-toggle opacity-60 flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-high text-on-surface shadow-[0_2px_8px_rgba(106,84,138,0.03)] transition-all duration-200" data-platform="apple">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center mb-1.5 shadow-xs text-primary">
+<span class="material-symbols-outlined text-[24px]">music_note</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold">Apple</span>
+</button>
+</div>
+</section>
+<!-- Trending Mood Combinations -->
+<section class="flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Trending Combos</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Harmonized movies &amp; auditory blankets</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</button>
+</div>
+<!-- Combo 1: Ghibli Calm + Lo-Fi Beats -->
+<div class="combo-card flex flex-col rounded-lg bg-surface-container-lowest overflow-hidden shadow-[0_6px_24px_rgba(106,84,138,0.08)] transition-all duration-300 hover:shadow-[0_8px_28px_rgba(106,84,138,0.14)]">
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A lush pastoral animated meadow bathed in golden late afternoon sun with fluffy whimsical clouds and a cozy cottage, evoking peaceful Studio Ghibli cinematic animation in soft pastel hues with gentle watercolor aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZEHskiLlrv8Pj6C1fuArEEYzf8tm1R9YLIkeCNQl5rdN94YCoETcfZ9R65glbJwUdGN-w9UA5y5MGWibEaRj-Ubghj3HEzfLUut2x39-d1eRqi_GVAzTuuMVJXe81uLIIbDJAcPDoV9F6fTYg6SjbEig1y3SMJCNrQzJtKO7vC1qQZU6Q21qTQ4iDreXXM7eJiv4MJTOvA8zdTqjN4yS_jP4Er8zOhLdBaVUsqmxHfekm5Ju7D1jX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-4">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm shadow-sm font-bold">Cinema • 98% Match</span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm shadow-sm">Audio • Cozy</span>
+</div>
+</div>
+</div>
+<div class="p-4 flex flex-col space-y-3">
+<div class="flex justify-between items-start">
+<div class="space-y-0.5">
+<h3 class="font-headline-md text-headline-md text-on-surface text-[19px]">Studio Ghibli Calm + Lo-Fi Beats</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Totoro-esque visual stillness synced to mellow Rhodes tape loops.</p>
+</div>
+<button class="like-btn shrink-0 w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-secondary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">My Neighbor Totoro</span>
+<span class="text-outline">•</span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">ChilledCow 24/7</span>
+</div>
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1.5 shadow-[0_2px_10px_rgba(106,84,138,0.3)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span>Pair</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Combo 2: 90s Rom-Com + Indie Pop -->
+<div class="combo-card flex flex-col rounded-lg bg-surface-container-lowest overflow-hidden shadow-[0_6px_24px_rgba(106,84,138,0.08)] transition-all duration-300 hover:shadow-[0_8px_28px_rgba(106,84,138,0.14)]">
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A warm charming 1990s style bookstore coffee nook filled with paperbacks, soft blush morning light pouring through vintage windowpanes, Polaroid photograph aesthetic in soft lavender and pastel pink tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu4eEzv__TQ9Y3GoYnkBDqnUHBRk-sNdGqVfOnOgJjkX3-mJF_LHv1sDldxstyTph786Dz17O5IQQFRDTQZxw2tZKLMY2v3iZY3KbxDRO4wvETOfc5jAj5CL8KUD1kXsrGV2Nw4HkHlVqSuifSdH2B2h-0tnqP3sFZ5ZyQZ9_2cy1A7byfsYPAenaKyTv2toMLLw_NlQ5sMotxLEa-xWVvyUyJWto1ec9roOGA6EY_hAbE1-gzPDCD"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-4">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shadow-sm font-bold">Cinema • Heartwarm</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-sm">Audio • Upbeat</span>
+</div>
+</div>
+</div>
+<div class="p-4 flex flex-col space-y-3">
+<div class="flex justify-between items-start">
+<div class="space-y-0.5">
+<h3 class="font-headline-md text-headline-md text-on-surface text-[19px]">90s Rom-Com + Indie Pop</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Meg Ryan banter paired with upbeat jangle-pop guitar riffs.</p>
+</div>
+<button class="like-btn shrink-0 w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-secondary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">You've Got Mail</span>
+<span class="text-outline">•</span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">Alvvays • The Beths</span>
+</div>
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1.5 shadow-[0_2px_10px_rgba(106,84,138,0.3)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span>Pair</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Combo 3: Rainy Noir + Smooth Jazz -->
+<div class="combo-card flex flex-col rounded-lg bg-surface-container-lowest overflow-hidden shadow-[0_6px_24px_rgba(106,84,138,0.08)] transition-all duration-300 hover:shadow-[0_8px_28px_rgba(106,84,138,0.14)]">
+<div class="relative w-full h-44 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A reflective rain-slicked city cobblestone street at dusk reflecting dreamy neon pastel reflections of cyan and violet with delicate raindrops falling in cinematic soft focus style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJd57G-SdkbHOpPwu_qJooBvkY1tb5iwJscPdY_Mpzbfov8mdVC7d5dFMSYyVe7QTmaFDlvSFOMhyb2cnkiO40FRU4gMAZrI667bguhh-dGiZT-oE6YwSDnA7IhO7GLZSphvbM1X0LlnYD4MyNhTYa1oBfl7BF2j7bUWNkc3acJQuBxFXegiQ4D2azF4YQ9yeQu0gjtXZ5of7diVsOMLSfGUDf8ciPCpm76U_0auxKlaSu27i1scDh"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-4">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-sm font-bold">Cinema • Mystery</span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm shadow-sm">Audio • Velvet</span>
+</div>
+</div>
+</div>
+<div class="p-4 flex flex-col space-y-3">
+<div class="flex justify-between items-start">
+<div class="space-y-0.5">
+<h3 class="font-headline-md text-headline-md text-on-surface text-[19px]">Rainy Noir + Smooth Jazz</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-[14px]">Trench coat detective moods wrapped in muted trumpet whispers.</p>
+</div>
+<button class="like-btn shrink-0 w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-secondary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">The Third Man</span>
+<span class="text-outline">•</span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant">Miles Davis 1958</span>
+</div>
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1.5 shadow-[0_2px_10px_rgba(106,84,138,0.3)] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span>Pair</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Sweet Delight Toast/Notice -->
+<div class="flex items-center gap-3 p-4 rounded-lg bg-primary-fixed/60 text-on-primary-fixed-variant shadow-[0_2px_12px_rgba(106,84,138,0.06)]">
+<span class="material-symbols-outlined text-primary text-[24px]">cookie</span>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-[16px] leading-tight font-bold">Did you know?</span>
+<span class="font-body-md text-body-md text-[13px] leading-snug">Listening to cozy acoustic chords while watching rainy cinema drops evening stress by 42%.</span>
+</div>
+</div>
+</div>
+<script>
+  (function initExploreInteractions() {
+    // Vibe chips selection
+    const chips = document.querySelectorAll('.vibe-chip');
+    const searchInput = document.getElementById('vibe-search-input');
+    
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const vibeName = chip.querySelector('span:last-child')?.textContent || '';
+        if (searchInput) {
+          searchInput.value = vibeName;
+          searchInput.focus();
+        }
+      });
+    });
+
+    // Stream Toggle Micro-interaction
+    const toggles = document.querySelectorAll('.stream-toggle');
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('opacity-60');
+        toggle.classList.toggle('scale-95');
+        setTimeout(() => toggle.classList.remove('scale-95'), 150);
+      });
+    });
+
+    // Mood slider dynamic label feedback
+    const tempoSlider = document.getElementById('tempo-slider');
+    const sliderStatus = document.getElementById('slider-status');
+    if (tempoSlider && sliderStatus) {
+      tempoSlider.addEventListener('input', (e) => {
+        const val = parseInt(e.target.value, 10);
+        let descriptor = 'Zen Calm';
+        if (val > 80) descriptor = 'Electric Dream';
+        else if (val > 60) descriptor = 'Cozy Cloud';
+        else if (val > 40) descriptor = 'Gentle Sway';
+        else descriptor = 'Deep Slumber';
+        
+        sliderStatus.textContent = `${val}% ${descriptor}`;
+      });
+    }
+
+    // Like buttons toggle
+    const likeButtons = document.querySelectorAll('.like-btn');
+    likeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          const isFilled = icon.textContent === 'favorite';
+          icon.textContent = isFilled ? 'favorite_border' : 'favorite';
+          btn.classList.toggle('text-secondary', !isFilled);
+          btn.classList.toggle('text-error', !isFilled);
+        }
+      });
+    });
+
+    // Surprise Me Magic Action
+    const surpriseBtn = document.getElementById('surprise-me-btn');
+    const vibes = [
+      'Ghibli Calm + Lo-Fi Beats',
+      'Midnight Cyberpunk + Dark Synth',
+      'French Nouvelle Vague + Cafe Accordion',
+      'Wes Anderson Pastel + Ukulele Melodies'
+    ];
+    if (surpriseBtn && searchInput) {
+      surpriseBtn.addEventListener('click', () => {
+        const randomVibe = vibes[Math.floor(Math.random() * vibes.length)];
+        searchInput.value = randomVibe;
+        searchInput.classList.add('bg-primary-fixed');
+        setTimeout(() => {
+          searchInput.classList.remove('bg-primary-fixed');
+        }, 400);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(106,84,138,0.06)]" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_2px_8px_rgba(214,188,250,0.4)]"><div class="flex items-center justify-around h-20 px-container-padding-mobile"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] px-3 py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-all duration-200" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] px-3 py-1.5 rounded-full transition-all duration-200 bg-primary-container text-on-primary-container shadow-[0_2px_8px_rgba(214,188,250,0.4)]" data-path="search" href="#"><span class="material-symbols-outlined text-[24px]">search</span><span class="font-label-sm text-label-sm mt-0.5">Search</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] px-3 py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-all duration-200" data-path="saved" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="font-label-sm text-label-sm mt-0.5">Saved</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] px-3 py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-all duration-200" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>

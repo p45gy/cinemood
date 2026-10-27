@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#8cd7a6", "on-error-container": "#93000a", "secondary-container": "#feb9d1", "primary": "#6a548a", "tertiary": "#1e6b43", "on-primary-fixed": "#250f43", "primary-fixed-dim": "#d5bbf9", "on-tertiary-container": "#0c5f38", "primary-fixed": "#eddcff", "on-primary": "#ffffff", "secondary-fixed": "#ffd9e4", "on-surface-variant": "#4a454e", "on-error": "#ffffff", "surface-container-high": "#dce9ff", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#69374b", "surface-dim": "#ccdbf4", "outline": "#7b757f", "primary-container": "#d6bcfa", "on-background": "#0d1c2e", "surface-container-low": "#eff4ff", "surface-variant": "#d4e4fc", "on-surface": "#0d1c2e", "inverse-primary": "#d5bbf9", "on-secondary-fixed": "#350c1f", "on-tertiary-fixed-variant": "#00522f", "inverse-surface": "#223144", "tertiary-fixed-dim": "#8bd7a6", "surface-tint": "#6a548a", "surface-container-highest": "#d4e4fc", "on-primary-container": "#5e497e", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "inverse-on-surface": "#eaf1ff", "outline-variant": "#ccc4cf", "background": "#f8f9ff", "surface": "#f8f9ff", "on-secondary": "#ffffff", "tertiary-fixed": "a7f3c0", "on-secondary-container": "#7b465a", "on-tertiary-fixed": "#002110", "on-primary-fixed-variant": "#513c71", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "secondary": "#844e63", "surface-container": "#e5eeff", "secondary-fixed-dim": "#f8b3cb" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "base-unit": "8px", "container-padding-mobile": "24px", "gutter": "24px", "section-gap": "48px", "container-padding-desktop": "64px" }, "fontFamily": { "body-lg": ["Quicksand"], "display-lg-mobile": ["Quicksand"], "display-lg": ["Quicksand"], "label-sm": ["Quicksand"], "body-md": ["Quicksand"], "headline-md": ["Quicksand"] }, "fontSize": { "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["13px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-container-padding-mobile flex items-center justify-between"><div class="flex items-center gap-2"><div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[22px]">mood</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary font-bold leading-none tracking-tight">Cur the Mood</span><span class="font-label-sm text-label-sm text-on-surface-variant">Saved</span></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full px-container-padding-mobile pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Header Sparkle -->
+<div class="flex items-center justify-between pb-3 pt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-headline-md text-headline-md text-on-surface">Your Sanctuary</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">bookmark_heart</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">24 Saved</span>
+</div>
+</div>
+<!-- Segmented Tabs Horizontal Bar -->
+<div class="w-full overflow-x-auto no-scrollbar py-2 -mx-container-padding-mobile px-container-padding-mobile">
+<div class="flex items-center gap-2 min-w-max" id="segmented-tabs">
+<button class="tab-pill px-4 py-2 rounded-full font-label-sm text-label-sm bg-primary text-on-primary shadow-sm flex items-center gap-1.5 transition-all duration-200" data-category="all" type="button">
+<span class="material-symbols-outlined text-[16px]">all_inclusive</span>
+<span>All Saved</span>
+</button>
+<button class="tab-pill px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container flex items-center gap-1.5 transition-all duration-200" data-category="movies" type="button">
+<span class="material-symbols-outlined text-[16px]">movie</span>
+<span>Movies &amp; Shows</span>
+</button>
+<button class="tab-pill px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container flex items-center gap-1.5 transition-all duration-200" data-category="audio" type="button">
+<span class="material-symbols-outlined text-[16px]">graphic_eq</span>
+<span>Playlists &amp; Audio</span>
+</button>
+<button class="tab-pill px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container flex items-center gap-1.5 transition-all duration-200" data-category="bundles" type="button">
+<span class="material-symbols-outlined text-[16px]">layers</span>
+<span>Mood Bundles</span>
+</button>
+</div>
+</div>
+<!-- Section: Saved Mood Bundles Carousel/Stack -->
+<section class="mt-5 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Curated Bundles</h2>
+</div>
+<button class="font-label-sm text-label-sm text-primary flex items-center gap-0.5 hover:underline">
+        See All
+        <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Bundle 1: Rainy Day Session (Pastel Lavender/Purple) -->
+<div class="w-full bg-primary-fixed/50 p-4 rounded-lg flex flex-col gap-3.5 shadow-sm transition-transform active:scale-[0.99]">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">water_drop</span> Cozy Melancholy
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 Films • 1 Playlist</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary-fixed">Rainy Day Session</h3>
+</div>
+<button aria-label="Favorite" class="w-9 h-9 rounded-full bg-surface flex items-center justify-center text-primary shadow-sm hover:bg-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<!-- Thumbnails Pile -->
+<div class="flex items-center justify-between gap-2 pt-1">
+<div class="flex items-center -space-x-4 overflow-hidden py-1">
+<img class="w-16 h-20 rounded-md object-cover shadow-sm ring-2 ring-surface" data-alt="Cinematic still frame from a gentle rainy day indie drama with misty foggy window in soft lavender and blue tones, atmospheric and peaceful cinematography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFexqPYq9bDoOHoBa_DDojLksAHVP9vVoILOWECK2z7Te-VMUt8ezTCTyFpNyyzThS1trslLsq9Fh0vvHBaM8U19tglQRUHWfMjY36WrJdroBBNVNZoS4mzxYovzpLy3bTxIoEHD66lBuMT37uNm9o30r_H_iKI3OK3UL80dR1RgScHO2fOQ5wi98AE5e4VnmljrqOFFhKE9boAfPpgd5MKtXin91Y183boACvESlrjuLJIJzrdIFN"/>
+<img class="w-16 h-20 rounded-md object-cover shadow-sm ring-2 ring-surface" data-alt="A warm cozy coffee shop movie scene with gentle steam rising from ceramic mugs, soft pastel amber lighting, intimate warm aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9UrP9S46hGwzhgWcTut9RZVzbICA573ubxOSmVtKq7tDIf_FVerua2VkrGAZzSTOuwWFIArMOWUDwiyuU-Cm1W-G3AM2lDfJwhRKzq-0BRxEC9uQeaVNgpJSMH_0zR8YeQ64zsLbkkfAVBMu6es1ApzrkcvG9vzOQDC2DsQmR8fHm-ZRmBdNfT30UD7ykX4xo6AGl73-jwDf2URJXZaA0qI-HC9pnfKZ2cbiw3aGAjbEQz901o2Tn"/>
+<img class="w-16 h-20 rounded-md object-cover shadow-sm ring-2 ring-surface" data-alt="A dreamy studio ghibli inspired pastoral field under purple overcast skies, gentle cinematic landscape with soft aesthetic color grading." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTArNfIb7X4bbqUs8nVH-EKfDPPddWqjaY6LyL0hDCIR1fRfE2RiPkC8r9TDVwlm5YN91d78HuvgqvuKemRwXkl-BFxuid7WPe8qL-Um4WyDlVb6AchQIQZZy_AOYtLjObkYm7MY35lZhSh7l39TIrfLCdGfkPf2fvI1YQ8WP0QrI8Y2OpWSdH9pao4RbjfYBWzHmY6cUZqew5Zib4PLzBdfTF2v21HlnqKv2ZqR0yCTAOuAb15-1B"/>
+</div>
+<!-- Spotify Playlist Badge -->
+<div class="flex flex-col items-end gap-1.5 flex-shrink-0">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">equalizer</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface leading-none">Petrichor Lo-Fi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[11px] leading-tight">42 mins • Spotify</span>
+</div>
+</div>
+<button class="px-3.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">play_arrow</span> Open Bundle
+          </button>
+</div>
+</div>
+</div>
+<!-- Bundle 2: Late Night Nostalgia (Mint Green Card) -->
+<div class="w-full bg-tertiary-fixed-dim/35 p-4 rounded-lg flex flex-col gap-3.5 shadow-sm transition-transform active:scale-[0.99]">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bedtime</span> 90s Vibes
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Films • 1 Cassette</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-tertiary-container">Late Night Nostalgia</h3>
+</div>
+<button aria-label="Favorite" class="w-9 h-9 rounded-full bg-surface flex items-center justify-center text-tertiary shadow-sm hover:bg-tertiary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="flex items-center justify-between gap-2 pt-1">
+<div class="flex items-center -space-x-4 overflow-hidden py-1">
+<img class="w-16 h-20 rounded-md object-cover shadow-sm ring-2 ring-surface" data-alt="Retro 90s bedroom aesthetic film still with neon soft sage green lamp light, polaroids, and quiet nostalgic teenage bedroom vibes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK9uSJkODuDEmqjzuGpRar6aapWo4ha4EAj6m3mkSCsv2B1HLAodyNcMYPqJj1A4KWpT9CNoXgcKSV9xWciflbcMVp6p-LWxC-gRXEXi8rTjsEYLbQIdZM2-0_nqXHwzyzvPcS-CiqAuWPHXbin_FXC28pTqWTHW91MbLfiNx71cC_P1pIZU_C44Vfe32baVy_X98Nf8VHZ-FW72yHdyab_dfHnnukO2L-MtU6C5EwlSf2u5SDnPi3"/>
+<img class="w-16 h-20 rounded-md object-cover shadow-sm ring-2 ring-surface" data-alt="Classic vintage convertible car driving on a coastal road at twilight with mint green and soft blush skies, cinematic vintage style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQMW0x5wRkhAbAOyo2dw_s-B2DZ1G51dGL1FCdzx0j2-twVVa4roJ85HD2cDbNOqYxIv0WA8pvDRzeZO5kRlGiyMvcNLLpfkmuvTZYPiIsMsmVz4s00VdKH2nuOPTUDhS9h2r1kLlJtQpgk-LQOOgbJuO3s3qxDtU7ZPEDBFt4kSolvLH4oiMg1MO3jUoNS4XiWwzEmJ0gh7Xs9b-Un3p_GIYyNE4Z_F5PPYOgFTDYsr4AlCUr_MEk"/>
+<img class="w-16 h-20 rounded-md object-cover shadow-sm ring-2 ring-surface" data-alt="Analog film photograph of friends sharing ice cream under a diner neon sign in dreamy mint and cream tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpLa8nWsHkPn5v7tZjzci_LwPrPP7It2-S-legTA4_tKoZDAJdgNyPLVUiezOJT3pNsNb1kCuu3VyMKKwaBfYF8ro3_SFVeCdV6LJ2xPROkVt_jvx4LJAHmsVMjKTYhlEhDXRvPk0UrmJZi1Swqqh4PBwR5iiybg8ZIMsAxBugLmXT1zF6JcrvtJrBvY09WknBg7lz-MzEmedlRjVLN0Vi4WUwOkiJzKF2PQFGazfuXrMjf6Q9KUnI"/>
+</div>
+<div class="flex flex-col items-end gap-1.5 flex-shrink-0">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">album</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface leading-none">City Light Melodies</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[11px] leading-tight">1h 14m • Spotify</span>
+</div>
+</div>
+<button class="px-3.5 py-1 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">play_arrow</span> Open Bundle
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Watchlist by Mood -->
+<section class="mt-8 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Watchlist by Mood</h2>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span>Sorted by Vibe</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</div>
+</div>
+<!-- 2-Column Grid of Mood-Tagged Posters -->
+<div class="grid grid-cols-2 gap-3.5">
+<!-- Card 1 -->
+<div class="flex flex-col rounded-lg bg-surface-container-lowest p-2.5 shadow-sm">
+<div class="relative w-full aspect-[2/3] rounded-md overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Whimsical midnight Paris rain street with warm golden lantern reflections in cobblestone puddles, romantic pastel dreamy photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBev1FDz6ZqqwAfbSwUSlrQ8Ci23j6db5mEM6PCVhI9eW4oYK8FxugdCnXRn1wrw8WYJnnTBinsK_XuhnI7oMVgyeZFfJCRsopa3_Ozw8PyrAtHjgxfh3hfH5LJMaJ7Cb4uxjIOdsnPGtcm3HzTOjSMccECiCAiGr4pi-jWGkK_XPIppELtCqCFLhMQam94j-YPUANzf7OOzWtNRiMIBAYBabhjdJ5e0tmnNBNSX7xEgPpXxTaRpB08"/>
+<!-- Mood Badge Overlaid -->
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-primary">rainy</span>
+<span class="font-label-sm text-[11px] font-bold text-primary">Rainy Day</span>
+</div>
+<!-- Streaming Badge -->
+<div class="absolute bottom-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/95 backdrop-blur-md shadow-sm flex items-center justify-center text-secondary font-bold text-[10px]">
+<span class="material-symbols-outlined text-[16px] text-secondary">tv</span>
+</div>
+<!-- Bookmark Button -->
+<button class="absolute top-2 right-2 w-6 h-6 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="pt-2 flex flex-col">
+<h4 class="font-body-md text-body-md font-semibold text-on-surface truncate">Midnight in Paris</h4>
+<div class="flex items-center justify-between mt-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">2011 • 1h 34m</span>
+<div class="flex items-center gap-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-semibold">4.8</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col rounded-lg bg-surface-container-lowest p-2.5 shadow-sm">
+<div class="relative w-full aspect-[2/3] rounded-md overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Yellow vintage Volkswagen microbus driving on a sunny desert highway under soft sunny lavender skies, joyful uplifting pastel cinematic frame." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCszVHp2v16TTJELd0S7dM48Yn2CNgsz69BPeD4IMo3l-tRKPUcoLikHOr9SJqkIuiepPrpvqtorTS5PUmEMcdTQVhJ9RpKv7n3U98NKDi-6do2u1_WrkhVTvD4KNwu6jzcUco_gKFvtARScgPHQ_sjYcwyCfS2wUwDS03fv5RPMroXyhensudOj-gHpFCfnPewoExHBtaPDmDBH08Eq0-ChmWsPr-3Zl3PjXneRYbAjHQlWf5swfqX"/>
+<!-- Mood Badge Overlaid -->
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-tertiary">wb_sunny</span>
+<span class="font-label-sm text-[11px] font-bold text-tertiary">Motivation Boost</span>
+</div>
+<!-- Streaming Badge -->
+<div class="absolute bottom-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/95 backdrop-blur-md shadow-sm flex items-center justify-center text-primary font-bold text-[10px]">
+<span class="material-symbols-outlined text-[16px] text-primary">smart_display</span>
+</div>
+<!-- Bookmark Button -->
+<button class="absolute top-2 right-2 w-6 h-6 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="pt-2 flex flex-col">
+<h4 class="font-body-md text-body-md font-semibold text-on-surface truncate">Little Miss Sunshine</h4>
+<div class="flex items-center justify-between mt-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">2006 • 1h 41m</span>
+<div class="flex items-center gap-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-semibold">4.9</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col rounded-lg bg-surface-container-lowest p-2.5 shadow-sm">
+<div class="relative w-full aspect-[2/3] rounded-md overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A soft pastel pink whimsical grand hotel facade framed symmetrically against a gentle alpine mountain backdrop, pastel fairy-tale cinematography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJNukRWFvuNCFqWgJMCtv0s8RkPtp1lrsjEP3oyB58bQDGwc3sqF7qnqXsMpm_cg2zDZoT7v7r5Gtv0EotU5N5a2UK35FpJKpzRCx2mwuVh0J2wCBX_NC7b_otdz0_OJBP_etH5Thjmt7m1YYrIzx28hasDGS49p8LFmA3a4NTBIxyeTvnzuSaNAM0ymsIZYp8Q1bFOFfXhmRAg7ghv8siSRu9RAYg0O1lHGas_KhXJuYvkVBKw2z5"/>
+<!-- Mood Badge Overlaid -->
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary">sentiment_satisfied</span>
+<span class="font-label-sm text-[11px] font-bold text-secondary">Pure Escapism</span>
+</div>
+<!-- Streaming Badge -->
+<div class="absolute bottom-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/95 backdrop-blur-md shadow-sm flex items-center justify-center text-tertiary font-bold text-[10px]">
+<span class="material-symbols-outlined text-[16px] text-tertiary">live_tv</span>
+</div>
+<!-- Bookmark Button -->
+<button class="absolute top-2 right-2 w-6 h-6 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="pt-2 flex flex-col">
+<h4 class="font-body-md text-body-md font-semibold text-on-surface truncate">Grand Budapest Hotel</h4>
+<div class="flex items-center justify-between mt-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">2014 • 1h 39m</span>
+<div class="flex items-center gap-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-semibold">4.9</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col rounded-lg bg-surface-container-lowest p-2.5 shadow-sm">
+<div class="relative w-full aspect-[2/3] rounded-md overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Two strangers sitting closely by neon Tokyo hotel room window observing city twilight rain, moody soft purple and periwinkle serene aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOsoIIz-6wxiG8cb8_oTP0vWay5fhHVhBiv-EfB1wOB_Kdi8dACDBNLJUELvLsSLBS3AJLOh9Rraxcf8vR-b3hJ9gsbyV-q-GwxM7Iklx3NKmJYvODIKpnKnQFwkhgNuwWbh6WRA4uoN2kXCx__3Oap3Ma8L_qyGg7uufQxPPfP7QUleTRdHOwH1MOAx-0rb2HWF3TY6iIYfirPScb72SOKGhC-ls8LOADdPmXatoYA7YdDOYYlHlW"/>
+<!-- Mood Badge Overlaid -->
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-primary">nights_stay</span>
+<span class="font-label-sm text-[11px] font-bold text-primary">Late Night Thought</span>
+</div>
+<!-- Streaming Badge -->
+<div class="absolute bottom-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/95 backdrop-blur-md shadow-sm flex items-center justify-center text-primary font-bold text-[10px]">
+<span class="material-symbols-outlined text-[16px] text-primary">play_circle</span>
+</div>
+<!-- Bookmark Button -->
+<button class="absolute top-2 right-2 w-6 h-6 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="pt-2 flex flex-col">
+<h4 class="font-body-md text-body-md font-semibold text-on-surface truncate">Lost in Translation</h4>
+<div class="flex items-center justify-between mt-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">2003 • 1h 42m</span>
+<div class="flex items-center gap-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm font-semibold">4.7</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Favorite Soundtracks & Playlists -->
+<section class="mt-8 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary-container"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Soundtracks &amp; Audio</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sync Spotify</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Audio Item 1 -->
+<div class="w-full bg-surface-container-lowest p-3 rounded-lg flex items-center justify-between shadow-sm hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-12 h-12 rounded-md overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Album cover artwork showing soft acoustic guitar in warm pastel morning light with delicate lavender lavender tones and clean typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdRizIL06_aMaJmXCK5G5TKi6C-OhFh0P2slFO2a8TS4_Nb5TmhgoKzt6JlWafHyYSBKDlOrknGhxKB0ihQ9YeIp9jKXeYfWJWa_l1XZoCkneOdwlnPf2Hzme-l_8YjeyYpMApIf2Kkgb5OVmbKzyPrMBtF7kW2NqZtPWKeRpYCtUCZt1Gu3D46fOn6xEYkSbKFnCCY17AbYGzFvgiJJeO-2zkEhMvR72mU4Rn-q1bc_YgZz7AzrZd"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Amélie Soundtrack (Accordion Dreams)</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>Yann Tiersen</span>
+<span>•</span>
+<span>18 tracks</span>
+<span>•</span>
+<span>54 min</span>
+</div>
+</div>
+</div>
+<button aria-label="Play Track" class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center ml-2 flex-shrink-0 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<!-- Audio Item 2 -->
+<div class="w-full bg-surface-container-lowest p-3 rounded-lg flex items-center justify-between shadow-sm hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-12 h-12 rounded-md overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Dreamy synthwave album art with calm pastel mint and lilac neon gradients reflecting across tranquil ocean waters at twilight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD1WTE2D2X8khcsCzxlC6doQbmuJ9h9XP579CBHOj3PzpjiPaNiW51-J5_qMsFh9l3N1LPJ9BvVdqv62JvEyJC71ivUYyuMoNYWi-AVMB0VYb9O2hsXHEIg3EZ8WoCCAGNtsYkjb9aWa1CfV3Vcr5BSORBOGxaOO7FYXlnV7mzSvHWSBlzzXqUruF2nBJE9hXSOZ3fmI01DsE1ZL13EQVEPi4SKcrHl2h-n6b4JbXy3_dorLHO1ZG9"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Midnight Ambient Chill &amp; Rain</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>Cur the Mood Official</span>
+<span>•</span>
+<span>24 tracks</span>
+<span>•</span>
+<span>1h 12m</span>
+</div>
+</div>
+</div>
+<button aria-label="Play Track" class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center ml-2 flex-shrink-0 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<!-- Audio Item 3 -->
+<div class="w-full bg-surface-container-lowest p-3 rounded-lg flex items-center justify-between shadow-sm hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-12 h-12 rounded-md overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Minimalist indie folk vinyl sleeve illustration in peach, soft mauve, and soft beige tones with warm sunrise aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFUOF8Kt7bk-rew5MSEBegtaFsW6NoK5mu3In4TLyQ_7q-qlaVRK4EyaS4Sh6SZ8KypgpB-17WTubmvZQthhSzNlvmRXa4_MCO1a4CpGxWurLZ3zYFf5FEYn9M4VfyFZ-hqUsDKq20owUvOzXZVXvmUYSd0VXgyM1eUE6yk0On6S3D7ZzRCBafmsf5JHzzCQm3vrYmg2hNlSOv9zn5leWEG0-JORmjD7IBEqIPU8zCMAcYaHSh9ZtX"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Warm Sunday Morning Folk</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>Sufjan Stevens &amp; Friends</span>
+<span>•</span>
+<span>15 tracks</span>
+<span>•</span>
+<span>48 min</span>
+</div>
+</div>
+</div>
+<button aria-label="Play Track" class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center ml-2 flex-shrink-0 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Floating Sticky Action Button to Create Mood Bundle -->
+<div class="sticky bottom-4 mt-6 z-20 flex justify-center w-full">
+<button class="px-5 py-3 rounded-full bg-primary text-on-primary font-headline-md text-[16px] shadow-[0_8px_20px_rgba(106,84,138,0.28)] flex items-center gap-2.5 hover:bg-on-primary-container active:scale-95 transition-all" id="create-bundle-btn" type="button">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+<span>Create Mood Bundle</span>
+<span class="material-symbols-outlined text-[18px]">magic_button</span>
+</button>
+</div>
+<!-- Interactive Script for Tab Switching & Feedback -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('#segmented-tabs .tab-pill');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => {
+            t.classList.remove('bg-primary', 'text-on-primary');
+            t.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+          });
+          tab.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+          tab.classList.add('bg-primary', 'text-on-primary');
+        });
+      });
+
+      const createBtn = document.getElementById('create-bundle-btn');
+      if (createBtn) {
+        createBtn.addEventListener('click', () => {
+          createBtn.classList.add('scale-95');
+          setTimeout(() => createBtn.classList.remove('scale-95'), 150);
+        });
+      }
+    });
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(106,84,138,0.06)]" data-active-classes="bg-primary-container text-on-primary-container shadow-[0_2px_8px_rgba(214,188,250,0.4)]"><div class="flex items-center justify-around h-20 px-container-padding-mobile"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] px-3 py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-all duration-200" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] px-3 py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-all duration-200" data-path="search" href="#"><span class="material-symbols-outlined text-[24px]">search</span><span class="font-label-sm text-label-sm mt-0.5">Search</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] px-3 py-1.5 rounded-full transition-all duration-200 bg-primary-container text-on-primary-container shadow-[0_2px_8px_rgba(214,188,250,0.4)]" data-path="saved" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="font-label-sm text-label-sm mt-0.5">Saved</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] px-3 py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-all duration-200" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>

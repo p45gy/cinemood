@@ -1,0 +1,238 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Cur the Mood - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed": "#002110",
+                      "surface-container-highest": "#d4e4fc",
+                      "on-primary": "#ffffff",
+                      "surface-container-low": "#eff4ff",
+                      "tertiary-fixed-dim": "#8bd7a6",
+                      "tertiary-container": "#8cd7a6",
+                      "primary-container": "#d6bcfa",
+                      "on-tertiary-container": "#0c5f38",
+                      "on-surface": "#0d1c2e",
+                      "on-primary-fixed-variant": "#513c71",
+                      "surface-container": "#e5eeff",
+                      "on-secondary-fixed-variant": "#69374b",
+                      "on-error-container": "#93000a",
+                      "on-primary-container": "#5e497e",
+                      "surface-dim": "#ccdbf4",
+                      "error-container": "#ffdad6",
+                      "outline": "#7b757f",
+                      "primary": "#6a548a",
+                      "secondary-container": "#feb9d1",
+                      "primary-fixed-dim": "#d5bbf9",
+                      "background": "#f8f9ff",
+                      "on-tertiary-fixed-variant": "#00522f",
+                      "surface-container-lowest": "#ffffff",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#eddcff",
+                      "on-primary-fixed": "#250f43",
+                      "inverse-surface": "#223144",
+                      "on-secondary-fixed": "#350c1f",
+                      "surface": "#f8f9ff",
+                      "surface-container-high": "#dce9ff",
+                      "on-tertiary": "#ffffff",
+                      "surface-variant": "#d4e4fc",
+                      "inverse-primary": "#d5bbf9",
+                      "secondary-fixed-dim": "#f8b3cb",
+                      "tertiary-fixed": "#a7f3c0",
+                      "on-surface-variant": "#4a454e",
+                      "secondary": "#844e63",
+                      "on-secondary-container": "#7b465a",
+                      "secondary-fixed": "#ffd9e4",
+                      "surface-tint": "#6a548a",
+                      "inverse-on-surface": "#eaf1ff",
+                      "outline-variant": "#ccc4cf",
+                      "tertiary": "#1e6b43",
+                      "surface-bright": "#f8f9ff",
+                      "on-secondary": "#ffffff",
+                      "on-background": "#0d1c2e",
+                      "on-error": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base-unit": "8px",
+                      "container-padding-desktop": "64px",
+                      "container-padding-mobile": "24px",
+                      "section-gap": "48px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Quicksand"
+                      ],
+                      "label-sm": [
+                              "Quicksand"
+                      ],
+                      "body-md": [
+                              "Quicksand"
+                      ],
+                      "display-lg-mobile": [
+                              "Quicksand"
+                      ],
+                      "body-lg": [
+                              "Quicksand"
+                      ],
+                      "headline-md": [
+                              "Quicksand"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body {
+            background-color: #FFFDF5; /* Custom cream base as per guidance */
+        }
+        /* Ambient shadows for cards based on their tint */
+        .shadow-lavender { box-shadow: 0 10px 30px -10px rgba(214, 188, 250, 0.5); }
+        .shadow-pink { box-shadow: 0 10px 30px -10px rgba(254, 185, 209, 0.5); }
+        .shadow-mint { box-shadow: 0 10px 30px -10px rgba(139, 215, 166, 0.5); }
+        .shadow-yellow { box-shadow: 0 10px 30px -10px rgba(255, 235, 153, 0.5); } /* Simulated soft yellow */
+        .shadow-blue { box-shadow: 0 10px 30px -10px rgba(204, 219, 244, 0.5); }
+        .shadow-peach { box-shadow: 0 10px 30px -10px rgba(255, 218, 214, 0.5); } /* Simulated soft peach */
+        
+        .inner-glow {
+            box-shadow: inset 0 2px 0 0 rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="text-on-background font-body-md min-h-screen flex flex-col pb-[120px] pt-[100px]">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md flex justify-center items-center px-container-padding-mobile py-4">
+<div class="flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" style="font-variation-settings: 'FILL' 1;">bubble_chart</span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile text-primary dark:text-primary-fixed-dim tracking-tight">Cur the Mood</h1>
+</div>
+</header>
+<main class="flex-grow flex flex-col px-container-padding-mobile md:px-container-padding-desktop max-w-[1440px] mx-auto w-full gap-8">
+<!-- Hero Section -->
+<section class="flex flex-col items-center text-center mt-section-gap gap-6">
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mx-auto">
+                pick a mood, we'll pick the rest.
+            </p>
+<button class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-8 py-4 rounded-full inner-glow shadow-lavender hover:opacity-80 transition-opacity scale-95 active:scale-90 flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                Surprise Me
+            </button>
+</section>
+<!-- Mood Grid -->
+<section class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+<!-- Rainy Day -->
+<button class="bg-surface-dim shadow-blue rounded-xl p-6 flex flex-col items-center justify-center gap-4 aspect-square hover:-translate-y-1 transition-transform inner-glow">
+<span class="material-symbols-outlined text-on-surface text-4xl" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+<span class="font-headline-md text-headline-md text-on-surface">Rainy Day</span>
+</button>
+<!-- Heartbroken -->
+<button class="bg-secondary-container shadow-pink rounded-xl p-6 flex flex-col items-center justify-center gap-4 aspect-square hover:-translate-y-1 transition-transform inner-glow">
+<span class="material-symbols-outlined text-on-secondary-container text-4xl" style="font-variation-settings: 'FILL' 1;">heart_broken</span>
+<span class="font-headline-md text-headline-md text-on-secondary-container">Heartbroken</span>
+</button>
+<!-- Hype Mode -->
+<button class="bg-[#FFF5D1] shadow-yellow rounded-xl p-6 flex flex-col items-center justify-center gap-4 aspect-square hover:-translate-y-1 transition-transform inner-glow">
+<span class="material-symbols-outlined text-[#8B7300] text-4xl" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-headline-md text-headline-md text-[#8B7300]">Hype Mode</span>
+</button>
+<!-- Nostalgic -->
+<button class="bg-tertiary-container shadow-mint rounded-xl p-6 flex flex-col items-center justify-center gap-4 aspect-square hover:-translate-y-1 transition-transform inner-glow">
+<span class="material-symbols-outlined text-on-tertiary-container text-4xl" style="font-variation-settings: 'FILL' 1;">history</span>
+<span class="font-headline-md text-headline-md text-on-tertiary-container">Nostalgic</span>
+</button>
+<!-- Cozy Night In -->
+<button class="bg-primary-container shadow-lavender rounded-xl p-6 flex flex-col items-center justify-center gap-4 aspect-square hover:-translate-y-1 transition-transform inner-glow">
+<span class="material-symbols-outlined text-on-primary-container text-4xl" style="font-variation-settings: 'FILL' 1;">bedtime</span>
+<span class="font-headline-md text-headline-md text-on-primary-container">Cozy Night In</span>
+</button>
+<!-- Motivation Boost -->
+<button class="bg-[#FFE5D1] shadow-peach rounded-xl p-6 flex flex-col items-center justify-center gap-4 aspect-square hover:-translate-y-1 transition-transform inner-glow">
+<span class="material-symbols-outlined text-[#8B4C1A] text-4xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-headline-md text-headline-md text-[#8B4C1A]">Motivation Boost</span>
+</button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 w-full rounded-t-lg z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-xl shadow-[0_-4px_20px_rgba(106,84,138,0.05)] fixed bottom-0 left-0 w-full flex justify-around items-center px-8 pb-8 pt-4">
+<!-- Active: Home -->
+<button class="flex items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full w-12 h-12 scale-110 active:scale-95 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined font-label-sm text-label-sm" style="font-variation-settings: 'FILL' 1;">home</span>
+</button>
+<!-- Inactive: Search -->
+<button class="flex items-center justify-center text-on-surface-variant dark:text-on-surface-variant w-12 h-12 hover:bg-primary-container/50 dark:hover:bg-primary/50 transition-colors scale-110 active:scale-95 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined font-label-sm text-label-sm">search</span>
+</button>
+<!-- Inactive: Favorite -->
+<button class="flex items-center justify-center text-on-surface-variant dark:text-on-surface-variant w-12 h-12 hover:bg-primary-container/50 dark:hover:bg-primary/50 transition-colors scale-110 active:scale-95 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined font-label-sm text-label-sm">favorite</span>
+</button>
+<!-- Inactive: Person -->
+<button class="flex items-center justify-center text-on-surface-variant dark:text-on-surface-variant w-12 h-12 hover:bg-primary-container/50 dark:hover:bg-primary/50 transition-colors scale-110 active:scale-95 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined font-label-sm text-label-sm">person</span>
+</button>
+</nav>
+
+
+</body></html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Cinemood - Share Card</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#002110",
+                        "surface-container-highest": "#d4e4fc",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "tertiary-fixed-dim": "#8bd7a6",
+                        "tertiary-container": "#8cd7a6",
+                        "primary-container": "#d6bcfa",
+                        "on-tertiary-container": "#0c5f38",
+                        "on-surface": "#0d1c2e",
+                        "on-primary-fixed-variant": "#513c71",
+                        "surface-container": "#e5eeff",
+                        "on-secondary-fixed-variant": "#69374b",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#5e497e",
+                        "surface-dim": "#ccdbf4",
+                        "error-container": "#ffdad6",
+                        "outline": "#7b757f",
+                        "primary": "#6a548a",
+                        "secondary-container": "#feb9d1",
+                        "primary-fixed-dim": "#d5bbf9",
+                        "background": "#f8f9ff",
+                        "on-tertiary-fixed-variant": "#00522f",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#eddcff",
+                        "on-primary-fixed": "#250f43",
+                        "inverse-surface": "#223144",
+                        "on-secondary-fixed": "#350c1f",
+                        "surface": "#f8f9ff",
+                        "surface-container-high": "#dce9ff",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#d4e4fc",
+                        "inverse-primary": "#d5bbf9",
+                        "secondary-fixed-dim": "#f8b3cb",
+                        "tertiary-fixed": "#a7f3c0",
+                        "on-surface-variant": "#4a454e",
+                        "secondary": "#844e63",
+                        "on-secondary-container": "#7b465a",
+                        "secondary-fixed": "#ffd9e4",
+                        "surface-tint": "#6a548a",
+                        "inverse-on-surface": "#eaf1ff",
+                        "outline-variant": "#ccc4cf",
+                        "tertiary": "#1e6b43",
+                        "surface-bright": "#f8f9ff",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#0d1c2e",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base-unit": "8px",
+                        "container-padding-desktop": "64px",
+                        "container-padding-mobile": "24px",
+                        "section-gap": "48px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Quicksand"],
+                        "label-sm": ["Quicksand"],
+                        "body-md": ["Quicksand"],
+                        "display-lg-mobile": ["Quicksand"],
+                        "body-lg": ["Quicksand"],
+                        "headline-md": ["Quicksand"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["13px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #FFFDF5; /* Cream background override for 'Playful Serenity' base */
+            overflow: hidden; /* Prevent scrolling for the overlay feel */
+        }
+        .story-card-shadow {
+            box-shadow: 0 20px 40px rgba(106, 84, 138, 0.15); /* Soft primary tint shadow */
+        }
+        .inner-glow {
+            box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.7);
+        }
+        /* Custom gradients for the story card background */
+        .card-gradient {
+            background: linear-gradient(135deg, #f8b3cb 0%, #d6bcfa 50%, #eff4ff 100%);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-container-padding-mobile md:p-container-padding-desktop relative">
+<!-- Abstract Ambient Background -->
+<div class="absolute inset-0 z-0 pointer-events-none opacity-40 blur-3xl mix-blend-multiply">
+<div class="absolute top-[-10%] left-[-10%] w-3/4 h-3/4 rounded-full bg-secondary-container blur-3xl opacity-60"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-3/4 h-3/4 rounded-full bg-primary-container blur-3xl opacity-60"></div>
+</div>
+<!-- Main Content Canvas (The Card) -->
+<main class="relative w-full max-w-sm aspect-[9/16] rounded-xl story-card-shadow card-gradient overflow-hidden flex flex-col justify-between p-6 z-10 transition-transform duration-500 hover:scale-[1.02]">
+<!-- Top: Movie Posters Collage -->
+<div class="grid grid-cols-3 gap-2 relative mt-4">
+<div class="aspect-[2/3] rounded-lg overflow-hidden transform -rotate-3 scale-95 origin-bottom-right shadow-sm border border-white/20">
+<img class="w-full h-full object-cover" data-alt="A soft, playful cinematic illustration of a rainy day scene, perhaps a person holding an umbrella in a pastel city. Gentle lighting, light cream and lavender color palette, matching the Cinemood brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1pVCOLCjDbzY4Z0yfT3Kw3OBvPSRAo1lRl4pCjQ8YULED8WR-khSeDGW32s0FtdvaZkhAwJBcntT3EKAn-YQ3EWdp6k_3rRaudX4TJh47Uf9VWb7Bmb2lexl8WyGngMtCgwyziSkazQr9BlRjA1Xp7t5zpZXZQJwOqFwtW42mt16-FOYigmIblpuWRQRE8UZukCiMwM1rYHawkPO8FZ-Vt5H1nHu8sDCC7GDN9o6ROmdlMlmHgcEc">
+</div>
+<div class="aspect-[2/3] rounded-lg overflow-hidden transform translate-y-4 shadow-md z-10 border border-white/30">
+<img class="w-full h-full object-cover" data-alt="A cozy indoor scene illustration, looking out a rain-streaked window at a soft pastel landscape. Warm, inviting lighting, emphasizing comfort and calm, fitting the 'Playful Serenity' aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLbRzBCAAjk_SzjWmVHv1m6IaV97wFpeyZpaP7DiwI3sSXHfJJFhIffh8JuOkRunyb7u7-IkD0urprQ_W65BJNy_E35463RgCN2aaX1kSn9QKsmYIkh1ecaAtkzCyWNgDIf529LlFQHkH06-Ap7-cUux11omVFVMWysy_BztyC-6556lo9xFRx-ukhHOGLTAFNgp99_NQveGP6OnMD_gJjpPcGG88cxpjqFgw-ryRHLGbh7AfrvmeX">
+</div>
+<div class="aspect-[2/3] rounded-lg overflow-hidden transform rotate-3 scale-95 origin-bottom-left shadow-sm border border-white/20">
+<img class="w-full h-full object-cover" data-alt="An abstract, dreamy watercolor painting of clouds and rain in soothing pastel colors like soft peach and muted mint green. Gentle, fluid, and serene style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeOo_Kld4UfYg7fzOdAh3zWCN54gpZh0jAhNsCt7Jg9HXVQUpRvU7r8phxzF0Wkx0IItiMbhF5x-sWy-seZDbSBfdqxbEOArdHHrRHw-ygys5uTiAqPEPeWzeRCJCAHXph6YPa7F-v-2StdrsCRiuYw_OtKOmiBkKdCGrClWa6_WfOaK9q8u7fR1pvmefc0-VLyrvjeRtLBt9ZaMgBOoKFJPEgjxDdmKm9nS3qtAEAY2IeAaD0v16S">
+</div>
+</div>
+<!-- Middle: Playlist Cover & Mood Name -->
+<div class="flex flex-col items-center flex-1 justify-center relative z-20">
+<!-- Playlist Cover Graphic -->
+<div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white/40 backdrop-blur-md shadow-lg border border-white/50 flex items-center justify-center mb-6 overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 mix-blend-multiply" data-alt="A minimal, stylized icon representing rain or calm weather, designed with thick rounded lines and soft pastel colors on a clean cream background. Whimsical and approachable." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBacI4djewXGRX78lI99fXhG0kWOfpfI-4_HTRLPu1PCLHzZUGFKy2EUzRtERAO-w7j4AqvbgJMSGYnf4hNuKzOS8IGTS8XVIk44zsY-fFBYNmr7UuLTBc1nNI28rQ5euO0hMyOXuWDnnBv8FOS5LNxspBc1BR5j7axHhuC4C5HghpUYYJOAnaA77VtZPRzkXV8lU-1FhagiWKt5TDDx7O4keE3MJ4f_nAQsgZVgMcCgEX5PzQxJbT_">
+</div>
+<!-- Mood Name -->
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface text-center drop-shadow-sm leading-tight">
+                Rainy Day
+             </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 text-center max-w-[80%]">
+                A cozy collection for staying indoors.
+             </p>
+</div>
+<!-- Bottom: Branding -->
+<div class="flex justify-between items-end w-full pb-2 relative z-20">
+<div class="font-label-sm text-label-sm text-primary tracking-widest uppercase opacity-80 mix-blend-color-burn font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[16px]" style="font-variation-settings: &quot;FILL&quot; 1;">bubble_chart</span>
+                CUR THE MOOD</div>
+<!-- Optional subtle decorative element -->
+<div class="w-8 h-8 rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center border border-white/40">
+<span class="material-symbols-outlined text-primary text-[18px]">favorite</span>
+</div>
+</div>
+</main>
+<!-- Bottom Action (Outside the card) -->
+<div class="mt-8 z-10 w-full max-w-sm flex justify-center">
+<button class="bg-primary text-on-primary font-body-lg text-body-lg rounded-full px-8 py-4 flex items-center gap-2 shadow-[0_8px_16px_rgba(106,84,138,0.2)] hover:shadow-[0_12px_24px_rgba(106,84,138,0.3)] transition-all duration-300 transform active:scale-95 inner-glow w-full justify-center">
+<span class="material-symbols-outlined">ios_share</span>
+            Share Mood
+        </button>
+</div>
+<!-- Close Button (Top right of viewport, acting as 'back' from this overlay) -->
+<button class="fixed top-container-padding-mobile right-container-padding-mobile md:top-container-padding-desktop md:right-container-padding-desktop w-12 h-12 bg-surface/50 backdrop-blur-md rounded-full flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors z-50">
+<span class="material-symbols-outlined">close</span>
+</button>
+
+
+</body></html>
